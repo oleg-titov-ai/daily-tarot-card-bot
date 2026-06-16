@@ -1,0 +1,109 @@
+{
+  "name": "Daily Tarot Card Bot - Demo Placeholder",
+  "active": false,
+  "nodes": [
+    {
+      "name": "Telegram Trigger",
+      "type": "n8n-nodes-base.telegramTrigger",
+      "typeVersion": 1,
+      "position": [-300, 0],
+      "parameters": {
+        "updates": ["message"]
+      }
+    },
+    {
+      "name": "Send Subscribe Message",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [-80, 0],
+      "parameters": {
+        "chatId": "DEMO_CHAT_ID",
+        "text": "👋 Привет! Ты подписан(а) на ежедневную Карту Дня. Каждое утро я буду присылать карту Таро и её значение. 🃏✨"
+      }
+    },
+    {
+      "name": "Upsert Demo Subscriber",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [140, 0],
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "INSERT INTO tarot_subscribers (chat_id, username, first_name) VALUES ('DEMO_CHAT_ID', 'demo_user', 'Demo User') ON CONFLICT (chat_id) DO NOTHING;"
+      }
+    },
+    {
+      "name": "Daily Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [-300, 300],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 8
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Select Active Subscribers",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [-80, 300],
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "SELECT chat_id FROM tarot_subscribers WHERE is_active = TRUE;"
+      }
+    },
+    {
+      "name": "Random Tarot Card",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [140, 300],
+      "parameters": {
+        "jsCode": "const cards = ['Шут', 'Маг', 'Солнце', 'Звезда'];\nconst card = cards[Math.floor(Math.random() * cards.length)];\nreturn [{ json: { card } }];"
+      }
+    },
+    {
+      "name": "Generate Card Meaning",
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.9,
+      "position": [360, 300],
+      "parameters": {
+        "promptType": "define",
+        "text": "Write a short entertainment-only daily tarot reflection in Russian for card: {{$json.card}}."
+      }
+    },
+    {
+      "name": "Prepare Telegram Photo Payload",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [580, 300],
+      "parameters": {
+        "jsCode": "return [{ json: { chat_id: 'DEMO_CHAT_ID', image_url: 'https://commons.wikimedia.org/wiki/Special:FilePath/RWS_Tarot_19_Sun.jpg', caption: 'Demo daily tarot card caption. Entertainment only.' } }];"
+      }
+    },
+    {
+      "name": "Send Daily Card",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [800, 300],
+      "parameters": {
+        "operation": "sendPhoto",
+        "chatId": "={{ $json.chat_id }}",
+        "file": "={{ $json.image_url }}",
+        "additionalFields": {
+          "caption": "={{ $json.caption }}"
+        }
+      }
+    }
+  ],
+  "connections": {},
+  "settings": {},
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": false,
+    "description": "Safe public placeholder. No credentials, webhook IDs, real chat IDs, instance IDs, or private data."
+  }
+}
