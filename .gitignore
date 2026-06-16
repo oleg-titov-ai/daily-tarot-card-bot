@@ -1,0 +1,31 @@
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Secrets / private data
+credentials.json
+secrets.json
+private/
+backup/
+*.bak
+*.backup
+
+# n8n local / exported sensitive files
+n8n/credentials*.json
+n8n/*production*.json
+n8n/*private*.json
+
+# Database dumps
+*.sql.gz
+*.dump
+*.backup
+
+# Logs
+*.log
+logs/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
