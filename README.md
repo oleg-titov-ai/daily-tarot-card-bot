@@ -24,6 +24,24 @@ The project is designed as a portfolio-ready automation template built with **Te
 
 ---
 
+## 🖼️ Demo Screenshots
+
+### Daily tarot card message
+
+![Daily tarot card message](docs/screenshots/01-daily-card-message.png)
+
+### n8n workflow overview
+
+![n8n workflow overview](docs/screenshots/02-n8n-workflow.png)
+
+### PostgreSQL subscribers table
+
+![PostgreSQL subscribers table](docs/screenshots/03-postgresql-subscribers.png)
+
+More details: [`docs/demo-screenshots.md`](docs/demo-screenshots.md)
+
+---
+
 ## ✨ Features
 
 - Daily scheduled tarot card delivery
@@ -81,7 +99,11 @@ daily-tarot-card-bot/
 │   ├── setup-checklist.md
 │   ├── security.md
 │   ├── legal-disclaimer.md
-│   └── demo-screenshots.md
+│   ├── demo-screenshots.md
+│   └── screenshots/
+│       ├── 01-daily-card-message.png
+│       ├── 02-n8n-workflow.png
+│       └── 03-postgresql-subscribers.png
 ├── sql/
 │   ├── 001_schema.sql
 │   ├── 002_demo_data.sql
