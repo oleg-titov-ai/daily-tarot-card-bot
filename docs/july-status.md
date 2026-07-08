@@ -13,3 +13,4 @@
 - Keep privacy notes visible.
 - Keep sample content easy to understand.
 - Next pass: make the demo journey easier to follow.
+- Evening pass: keep recommendation examples neutral and easy to review.
