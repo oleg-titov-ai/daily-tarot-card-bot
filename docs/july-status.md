@@ -11,3 +11,4 @@
 - Add a clear demo journey.
 - Clarify scheduling behavior.
 - Keep privacy notes visible.
+- Keep sample content easy to understand.
