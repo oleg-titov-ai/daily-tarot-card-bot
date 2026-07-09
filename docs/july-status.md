@@ -16,3 +16,4 @@
 - Evening pass: keep recommendation examples neutral and easy to review.
 - Morning pass: add a short checklist for testing scheduled messages.
 - Midday pass: keep examples simple.
+- Evening pass: keep scheduling notes clear for a basic demo run.
