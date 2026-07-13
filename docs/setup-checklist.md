@@ -49,6 +49,7 @@ Use this checklist to configure the bot safely.
 - [ ] Random card is selected.
 - [ ] Telegram photo + caption is sent.
 - [ ] Delivery history is saved.
+- [ ] Retry behavior is verified for a temporary Telegram delivery failure.
 
 ---
 
