@@ -50,6 +50,7 @@ Use this checklist to configure the bot safely.
 - [ ] Telegram photo + caption is sent.
 - [ ] Delivery history is saved.
 - [ ] Retry behavior is verified for a temporary Telegram delivery failure.
+- [ ] Re-running the same scheduled batch does not send a duplicate card to the same user.
 
 ---
 
