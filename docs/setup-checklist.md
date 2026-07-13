@@ -28,6 +28,7 @@ Use this checklist to configure the bot safely.
 - [ ] Configure Telegram credentials locally.
 - [ ] Configure PostgreSQL credentials locally.
 - [ ] Set daily schedule trigger.
+- [ ] Verify the workflow timezone before enabling the schedule.
 - [ ] Test with demo user.
 
 ---
