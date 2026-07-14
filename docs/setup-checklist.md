@@ -54,6 +54,7 @@ Use this checklist to configure the bot safely.
 - [ ] Retry behavior is verified for a temporary Telegram delivery failure.
 - [ ] Re-running the same scheduled batch does not send a duplicate card to the same user.
 - [ ] Inactive users are excluded from scheduled delivery.
+- [ ] An empty active-user list completes without an error or outbound message.
 
 ---
 
