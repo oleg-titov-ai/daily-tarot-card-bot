@@ -38,6 +38,7 @@ Use this checklist to configure the bot safely.
 - [ ] Add public demo image URLs or local card assets.
 - [ ] Make sure image rights allow public usage.
 - [ ] Do not include copyrighted card images unless allowed.
+- [ ] Verify a text-only fallback is used when an image asset is unavailable.
 
 ---
 
