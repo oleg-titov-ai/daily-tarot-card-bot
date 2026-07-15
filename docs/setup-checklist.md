@@ -50,6 +50,7 @@ Use this checklist to configure the bot safely.
 - [ ] Schedule trigger runs.
 - [ ] Random card is selected.
 - [ ] Telegram photo + caption is sent.
+- [ ] Verify generated captions stay within Telegram's supported caption length.
 - [ ] Delivery history is saved.
 - [ ] Retry behavior is verified for a temporary Telegram delivery failure.
 - [ ] Re-running the same scheduled batch does not send a duplicate card to the same user.
