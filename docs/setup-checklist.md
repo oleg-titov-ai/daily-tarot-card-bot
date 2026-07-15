@@ -29,6 +29,7 @@ Use this checklist to configure the bot safely.
 - [ ] Configure PostgreSQL credentials locally.
 - [ ] Set daily schedule trigger.
 - [ ] Verify the workflow timezone before enabling the schedule.
+- [ ] Confirm the schedule can be disabled without deleting workflow configuration.
 - [ ] Test with demo user.
 
 ---
