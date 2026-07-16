@@ -56,6 +56,7 @@ Use this checklist to configure the bot safely.
 - [ ] Delivery history is saved.
 - [ ] Retry behavior is verified for a temporary Telegram delivery failure.
 - [ ] Re-running the same scheduled batch does not send a duplicate card to the same user.
+- [ ] Confirm each scheduled batch uses a stable identifier for duplicate protection.
 - [ ] Confirm the delivery record is written only after Telegram accepts the message.
 - [ ] Confirm the saved delivery timestamp uses the workflow's configured timezone.
 - [ ] Inactive users are excluded from scheduled delivery.
