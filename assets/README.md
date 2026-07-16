@@ -15,3 +15,5 @@ https://commons.wikimedia.org/wiki/Special:FilePath/RWS_Tarot_19_Sun.jpg
 Do not upload card images unless you are sure the license allows public redistribution.
 
 For portfolio usage, public image URLs are safer than storing image files directly.
+
+Before a demo, verify that each referenced image URL still resolves successfully.
