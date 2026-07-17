@@ -43,6 +43,7 @@ Use this checklist to configure the bot safely.
 - [ ] Verify a text-only fallback is used when an image asset is unavailable.
 - [ ] Validate that every demo card has a unique ID and non-empty meaning text.
 - [ ] Confirm every active demo card references an available image or the documented fallback.
+- [ ] Confirm card titles, meanings, and fallback text use the same configured locale.
 
 ---
 
