@@ -59,6 +59,7 @@ Use this checklist to configure the bot safely.
 - [ ] Confirm each scheduled batch uses a stable identifier for duplicate protection.
 - [ ] Confirm the delivery record is written only after Telegram accepts the message.
 - [ ] Confirm the saved delivery timestamp uses the workflow's configured timezone.
+- [ ] Confirm one user's delivery failure does not stop delivery attempts for other active users.
 - [ ] Inactive users are excluded from scheduled delivery.
 - [ ] An empty active-user list completes without an error or outbound message.
 
