@@ -64,6 +64,7 @@ Use this checklist to configure the bot safely.
 - [ ] Confirm one user's delivery failure does not stop delivery attempts for other active users.
 - [ ] Inactive users are excluded from scheduled delivery.
 - [ ] An empty active-user list completes without an error or outbound message.
+- [ ] Verify delivery audit records contain card and status references but no private message text.
 
 ---
 
