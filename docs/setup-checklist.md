@@ -57,6 +57,7 @@ Use this checklist to configure the bot safely.
 - [ ] Verify generated captions stay within Telegram's supported caption length.
 - [ ] Delivery history is saved.
 - [ ] Retry behavior is verified for a temporary Telegram delivery failure.
+- [ ] Confirm delivery retries have a finite attempt limit and visible final status.
 - [ ] Re-running the same scheduled batch does not send a duplicate card to the same user.
 - [ ] Confirm each scheduled batch uses a stable identifier for duplicate protection.
 - [ ] Confirm the delivery record is written only after Telegram accepts the message.
