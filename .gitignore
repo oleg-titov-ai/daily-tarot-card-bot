@@ -25,6 +25,10 @@ n8n/*private*.json
 *.log
 logs/
 
+# Python cache
+__pycache__/
+*.pyc
+
 # OS / editor
 .DS_Store
 .idea/
