@@ -68,6 +68,7 @@ Use this checklist to configure the bot safely.
 - [ ] Confirm paused subscribers remain excluded after a workflow restart.
 - [ ] An empty active-user list completes without an error or outbound message.
 - [ ] Verify delivery audit records contain card and status references but no private message text.
+- [ ] Confirm delivery history is queried in deterministic timestamp order during audits.
 
 ---
 
