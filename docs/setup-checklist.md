@@ -70,6 +70,7 @@ Use this checklist to configure the bot safely.
 - [ ] Verify delivery audit records contain card and status references but no private message text.
 - [ ] Confirm delivery history is queried in deterministic timestamp order during audits.
 - [ ] Record total batch duration so unusually slow deliveries are visible during testing.
+- [ ] Confirm delivery status moves forward only and a completed send cannot return to pending.
 
 ---
 
