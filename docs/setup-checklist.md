@@ -71,6 +71,7 @@ Use this checklist to configure the bot safely.
 - [ ] Confirm delivery history is queried in deterministic timestamp order during audits.
 - [ ] Record total batch duration so unusually slow deliveries are visible during testing.
 - [ ] Confirm delivery status moves forward only and a completed send cannot return to pending.
+- [ ] Verify the same delivery key cannot create more than one successful audit record.
 
 ---
 
