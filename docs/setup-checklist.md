@@ -74,6 +74,7 @@ Use this checklist to configure the bot safely.
 - [ ] Confirm delivery status moves forward only and a completed send cannot return to pending.
 - [ ] Verify the same delivery key cannot create more than one successful audit record.
 - [ ] Verify Telegram rate-limit responses pause the batch and resume without duplicate sends.
+- [ ] Confirm pending delivery backlog is visible before starting the next scheduled batch.
 
 ---
 
