@@ -78,6 +78,7 @@ Use this checklist to configure the bot safely.
 - [ ] Confirm pending delivery backlog is visible before starting the next scheduled batch.
 - [ ] Confirm missing localized text falls back to the documented default locale.
 - [ ] Verify an image download timeout uses the documented text-only fallback without blocking the batch.
+- [ ] Record sent, skipped, retried, and failed counts in a non-sensitive batch completion summary.
 
 ---
 
