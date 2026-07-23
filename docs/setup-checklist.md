@@ -56,6 +56,7 @@ Use this checklist to configure the bot safely.
 - [ ] Random card is selected.
 - [ ] Telegram photo + caption is sent.
 - [ ] Verify generated captions stay within Telegram's supported caption length.
+- [ ] Verify card titles and meanings render correctly with the configured Telegram parse mode.
 - [ ] Delivery history is saved.
 - [ ] Retry behavior is verified for a temporary Telegram delivery failure.
 - [ ] Confirm delivery retries have a finite attempt limit and visible final status.
