@@ -77,6 +77,7 @@ Use this checklist to configure the bot safely.
 - [ ] Verify Telegram rate-limit responses pause the batch and resume without duplicate sends.
 - [ ] Confirm pending delivery backlog is visible before starting the next scheduled batch.
 - [ ] Confirm missing localized text falls back to the documented default locale.
+- [ ] Verify an image download timeout uses the documented text-only fallback without blocking the batch.
 
 ---
 
