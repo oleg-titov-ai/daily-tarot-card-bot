@@ -69,6 +69,7 @@ Use this checklist to configure the bot safely.
 - [ ] Confirm one user's delivery failure does not stop delivery attempts for other active users.
 - [ ] Inactive users are excluded from scheduled delivery.
 - [ ] Confirm paused subscribers remain excluded after a workflow restart.
+- [ ] Recheck user activity immediately before sending so recently disabled users are skipped.
 - [ ] An empty active-user list completes without an error or outbound message.
 - [ ] Verify delivery audit records contain card and status references but no private message text.
 - [ ] Confirm delivery history is queried in deterministic timestamp order during audits.
