@@ -80,6 +80,7 @@ Use this checklist to configure the bot safely.
 - [ ] Confirm missing localized text falls back to the documented default locale.
 - [ ] Verify an image download timeout uses the documented text-only fallback without blocking the batch.
 - [ ] Record sent, skipped, retried, and failed counts in a non-sensitive batch completion summary.
+- [ ] Track time from scheduled batch start to Telegram acceptance so abnormal delivery latency is visible.
 
 ---
 
