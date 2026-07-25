@@ -83,6 +83,7 @@ Use this checklist to configure the bot safely.
 - [ ] Record sent, skipped, retried, and failed counts in a non-sensitive batch completion summary.
 - [ ] Track time from scheduled batch start to Telegram acceptance so abnormal delivery latency is visible.
 - [ ] Reconcile the completion summary totals with persisted delivery records after each test batch.
+- [ ] Compare the selected recipient count with the expected active-user count before starting a large batch.
 
 ---
 
