@@ -36,6 +36,8 @@ __pycache__/
 coverage.xml
 htmlcov/
 .tox/
+.venv/
+venv/
 
 # OS / editor
 .DS_Store
