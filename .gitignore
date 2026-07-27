@@ -38,6 +38,7 @@ htmlcov/
 .tox/
 .venv/
 venv/
+.cache/
 
 # OS / editor
 .DS_Store
