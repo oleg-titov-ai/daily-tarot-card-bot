@@ -172,3 +172,5 @@ Telegram-бот, который каждое утро отправляет сл�
 Maintenance note: verify every active demo card has both a readable caption and a usable image fallback.
 
 Maintenance note: confirm disabled subscribers are excluded immediately before each scheduled send.
+
+Maintenance note: confirm demo image URLs remain reachable before portfolio demonstrations.
