@@ -39,6 +39,9 @@ htmlcov/
 .venv/
 venv/
 .cache/
+build/
+dist/
+*.egg-info/
 
 # OS / editor
 .DS_Store
