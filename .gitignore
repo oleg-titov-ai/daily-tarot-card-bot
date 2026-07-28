@@ -20,6 +20,7 @@ n8n/*private*.json
 *.sql.gz
 *.dump
 *.backup
+*.sqlite3
 
 # Logs
 *.log
