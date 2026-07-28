@@ -36,6 +36,7 @@ __pycache__/
 coverage.xml
 htmlcov/
 .tox/
+.nox/
 .venv/
 venv/
 .cache/
