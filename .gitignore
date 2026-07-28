@@ -35,6 +35,7 @@ __pycache__/
 .hypothesis/
 .pyright/
 .coverage
+.coverage.*
 coverage.xml
 htmlcov/
 .tox/
