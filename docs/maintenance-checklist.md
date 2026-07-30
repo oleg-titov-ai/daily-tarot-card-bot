@@ -11,3 +11,5 @@ Confirm a paused or unsubscribed recipient is excluded before each scheduled bat
 Review delivery logs after retries to confirm each recipient receives no more than one daily card.
 
 Check generated captions against Telegram length limits before deployment so scheduled messages do not fail unexpectedly.
+
+Verify retry delays are bounded and use backoff so a temporary Telegram outage does not create a rapid request loop.
