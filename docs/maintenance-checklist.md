@@ -7,3 +7,5 @@ Verify the configured timezone and daylight-saving behavior before enabling sche
 Test one scheduled run with an unavailable image to confirm the fallback message is delivered only once.
 
 Confirm a paused or unsubscribed recipient is excluded before each scheduled batch begins.
+
+Review delivery logs after retries to confirm each recipient receives no more than one daily card.
