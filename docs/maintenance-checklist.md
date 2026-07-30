@@ -13,3 +13,5 @@ Review delivery logs after retries to confirm each recipient receives no more th
 Check generated captions against Telegram length limits before deployment so scheduled messages do not fail unexpectedly.
 
 Verify retry delays are bounded and use backoff so a temporary Telegram outage does not create a rapid request loop.
+
+Check a small weekly sample for repeated card-and-caption combinations so accidental content duplication is caught before scheduled delivery.
