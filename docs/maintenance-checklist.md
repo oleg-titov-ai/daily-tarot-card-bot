@@ -9,3 +9,5 @@ Test one scheduled run with an unavailable image to confirm the fallback message
 Confirm a paused or unsubscribed recipient is excluded before each scheduled batch begins.
 
 Review delivery logs after retries to confirm each recipient receives no more than one daily card.
+
+Check generated captions against Telegram length limits before deployment so scheduled messages do not fail unexpectedly.
