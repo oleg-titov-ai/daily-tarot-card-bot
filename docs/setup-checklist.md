@@ -85,6 +85,7 @@ Use this checklist to configure the bot safely.
 - [ ] Reconcile the completion summary totals with persisted delivery records after each test batch.
 - [ ] Compare the selected recipient count with the expected active-user count before starting a large batch.
 - [ ] Confirm retries preserve the original recipient order used for the batch audit.
+- [ ] Confirm sent, skipped, retried, and failed totals add up to the selected recipient count.
 
 ---
 
