@@ -15,3 +15,5 @@ Check generated captions against Telegram length limits before deployment so sch
 Verify retry delays are bounded and use backoff so a temporary Telegram outage does not create a rapid request loop.
 
 Check a small weekly sample for repeated card-and-caption combinations so accidental content duplication is caught before scheduled delivery.
+
+Restart the scheduler in a test environment and confirm a missed run is not replayed twice.
