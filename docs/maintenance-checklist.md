@@ -19,3 +19,5 @@ Check a small weekly sample for repeated card-and-caption combinations so accide
 Restart the scheduler in a test environment and confirm a missed run is not replayed twice.
 
 Confirm the scheduler records a clear success or failure result for each completed daily batch.
+
+Verify an empty eligible-recipient list completes cleanly without sending test or fallback messages.
