@@ -17,3 +17,5 @@ Verify retry delays are bounded and use backoff so a temporary Telegram outage d
 Check a small weekly sample for repeated card-and-caption combinations so accidental content duplication is caught before scheduled delivery.
 
 Restart the scheduler in a test environment and confirm a missed run is not replayed twice.
+
+Confirm the scheduler records a clear success or failure result for each completed daily batch.
