@@ -174,3 +174,5 @@ Maintenance note: verify every active demo card has both a readable caption and 
 Maintenance note: confirm disabled subscribers are excluded immediately before each scheduled send.
 
 Maintenance note: confirm demo image URLs remain reachable before portfolio demonstrations.
+
+Maintenance note: verify the documented delivery time uses an explicit timezone to avoid daylight-saving drift.
