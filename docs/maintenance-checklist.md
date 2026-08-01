@@ -21,3 +21,5 @@ Restart the scheduler in a test environment and confirm a missed run is not repl
 Confirm the scheduler records a clear success or failure result for each completed daily batch.
 
 Verify an empty eligible-recipient list completes cleanly without sending test or fallback messages.
+
+Confirm invalid or missing card media is logged without exposing recipient identifiers or bot credentials.
