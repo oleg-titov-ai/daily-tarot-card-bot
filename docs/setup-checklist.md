@@ -87,6 +87,7 @@ Use this checklist to configure the bot safely.
 - [ ] Confirm retries preserve the original recipient order used for the batch audit.
 - [ ] Confirm sent, skipped, retried, and failed totals add up to the selected recipient count.
 - [ ] Record the batch completion timestamp in the configured timezone for later audit comparison.
+- [ ] Define how long non-sensitive batch audit summaries are retained.
 
 ---
 
