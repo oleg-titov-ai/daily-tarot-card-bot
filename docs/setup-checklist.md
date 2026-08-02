@@ -88,6 +88,7 @@ Use this checklist to configure the bot safely.
 - [ ] Confirm sent, skipped, retried, and failed totals add up to the selected recipient count.
 - [ ] Record the batch completion timestamp in the configured timezone for later audit comparison.
 - [ ] Define how long non-sensitive batch audit summaries are retained.
+- [ ] Confirm a new scheduled batch cannot start while the previous batch still holds its delivery lock.
 
 ---
 
