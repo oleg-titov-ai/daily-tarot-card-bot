@@ -23,3 +23,5 @@ Confirm the scheduler records a clear success or failure result for each complet
 Verify an empty eligible-recipient list completes cleanly without sending test or fallback messages.
 
 Confirm invalid or missing card media is logged without exposing recipient identifiers or bot credentials.
+
+Confirm a partially failed batch can resume without re-sending cards already marked as delivered.
