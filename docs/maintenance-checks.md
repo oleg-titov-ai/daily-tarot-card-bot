@@ -7,3 +7,4 @@ Before enabling scheduled delivery:
 - Test the text-only fallback for unavailable images.
 - Confirm completion logs contain counts and statuses but no private identifiers.
 - Verify a manual retry does not resend messages already marked delivered.
+- Confirm generated content is labeled with the intended delivery date before sending.
