@@ -6,3 +6,4 @@ Before enabling scheduled delivery:
 - Verify inactive subscribers are excluded immediately before sending.
 - Test the text-only fallback for unavailable images.
 - Confirm completion logs contain counts and statuses but no private identifiers.
+- Verify a manual retry does not resend messages already marked delivered.
