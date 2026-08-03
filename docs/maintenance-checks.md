@@ -8,3 +8,4 @@ Before enabling scheduled delivery:
 - Confirm completion logs contain counts and statuses but no private identifiers.
 - Verify a manual retry does not resend messages already marked delivered.
 - Confirm generated content is labeled with the intended delivery date before sending.
+- Verify delayed jobs outside the configured delivery window are skipped or rescheduled explicitly.
