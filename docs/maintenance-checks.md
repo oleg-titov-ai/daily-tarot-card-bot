@@ -11,3 +11,4 @@ Before enabling scheduled delivery:
 - Verify delayed jobs outside the configured delivery window are skipped or rescheduled explicitly.
 - Confirm a failed content-generation step cannot trigger an empty subscriber broadcast.
 - Record the eligible-subscriber count at send start so delivery totals can be reconciled safely.
+- Send a preview to a test recipient before enabling a changed production schedule.
