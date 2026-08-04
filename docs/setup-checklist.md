@@ -89,6 +89,7 @@ Use this checklist to configure the bot safely.
 - [ ] Record the batch completion timestamp in the configured timezone for later audit comparison.
 - [ ] Define how long non-sensitive batch audit summaries are retained.
 - [ ] Confirm a new scheduled batch cannot start while the previous batch still holds its delivery lock.
+- [ ] Confirm the scheduler and database clocks do not differ enough to misclassify a batch as stale.
 
 ---
 
