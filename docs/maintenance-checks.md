@@ -13,3 +13,4 @@ Before enabling scheduled delivery:
 - Record the eligible-subscriber count at send start so delivery totals can be reconciled safely.
 - Send a preview to a test recipient before enabling a changed production schedule.
 - Check that the next scheduled card is not a duplicate of the previous delivered item.
+- Verify preview deliveries are excluded from production delivery metrics.
