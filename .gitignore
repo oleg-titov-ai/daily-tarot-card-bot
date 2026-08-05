@@ -26,6 +26,9 @@ n8n/*private*.json
 *.log
 logs/
 
+# Local delivery previews
+preview-deliveries/
+
 # Python cache
 __pycache__/
 *.pyc
