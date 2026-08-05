@@ -14,3 +14,4 @@ Before enabling scheduled delivery:
 - Send a preview to a test recipient before enabling a changed production schedule.
 - Check that the next scheduled card is not a duplicate of the previous delivered item.
 - Verify preview deliveries are excluded from production delivery metrics.
+- Review fallback copy after template changes so it remains complete without generated media.
