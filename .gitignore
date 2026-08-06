@@ -30,6 +30,7 @@ logs/
 preview-deliveries/
 schedule-test-output/
 delivery-audit-reports/
+card-preview-renders/
 
 # Python cache
 __pycache__/
