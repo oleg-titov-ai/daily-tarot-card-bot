@@ -29,6 +29,7 @@ logs/
 # Local delivery previews
 preview-deliveries/
 schedule-test-output/
+delivery-audit-reports/
 
 # Python cache
 __pycache__/
