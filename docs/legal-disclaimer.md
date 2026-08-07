@@ -25,6 +25,8 @@ Users are responsible for their own decisions.
 
 The daily card should be treated as a prompt for reflection, not as an instruction or a prediction.
 
+Keep the entertainment-only disclaimer visible in demo and production message templates.
+
 ---
 
 ## Recommended Disclaimer Text
