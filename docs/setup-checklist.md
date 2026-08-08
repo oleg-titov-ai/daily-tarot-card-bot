@@ -45,6 +45,7 @@ Use this checklist to configure the bot safely.
 - [ ] Confirm every active demo card references an available image or the documented fallback.
 - [ ] Confirm card titles, meanings, and fallback text use the same configured locale.
 - [ ] Verify random selection excludes inactive or incomplete card records.
+- [ ] Review the demo card dataset for accidental real-user notes or copied private content before portfolio use.
 
 ---
 
