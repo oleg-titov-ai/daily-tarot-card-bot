@@ -70,6 +70,8 @@ n8n
 
 Also manually inspect screenshots before uploading them.
 
+Confirm demo delivery-history examples use synthetic user identifiers and timestamps that cannot be mistaken for real subscriber activity.
+
 ---
 
 ## 🧯 If a Secret Was Committed
