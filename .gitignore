@@ -31,6 +31,7 @@ preview-deliveries/
 schedule-test-output/
 delivery-audit-reports/
 card-preview-renders/
+delivery-retry-snapshots/
 
 # Python cache
 __pycache__/
