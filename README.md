@@ -180,3 +180,5 @@ Maintenance note: verify the documented delivery time uses an explicit timezone 
 Maintenance note: verify a retried scheduled run does not send a second daily card to users already marked delivered.
 
 Maintenance note: confirm delivery history records failures separately from successful sends for easier retry checks.
+
+Maintenance note: verify retry logic targets only failed deliveries and never resends previously successful ones.
