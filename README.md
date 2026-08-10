@@ -178,3 +178,5 @@ Maintenance note: confirm demo image URLs remain reachable before portfolio demo
 Maintenance note: verify the documented delivery time uses an explicit timezone to avoid daylight-saving drift.
 
 Maintenance note: verify a retried scheduled run does not send a second daily card to users already marked delivered.
+
+Maintenance note: confirm delivery history records failures separately from successful sends for easier retry checks.
