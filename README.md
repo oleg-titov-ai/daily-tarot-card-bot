@@ -184,3 +184,5 @@ Maintenance note: confirm delivery history records failures separately from succ
 Maintenance note: verify retry logic targets only failed deliveries and never resends previously successful ones.
 
 Maintenance note: test schedule changes with a demo subscriber before applying a new delivery timezone to production.
+
+Maintenance note: keep a text-only fallback ready so a broken card image does not block the daily message.
