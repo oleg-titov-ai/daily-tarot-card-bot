@@ -72,6 +72,8 @@ Also manually inspect screenshots before uploading them.
 
 Confirm demo delivery-history examples use synthetic user identifiers and timestamps that cannot be mistaken for real subscriber activity.
 
+Confirm card-image examples do not embed user-specific filenames, URLs, or private storage paths.
+
 ---
 
 ## 🧯 If a Secret Was Committed
