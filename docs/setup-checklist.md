@@ -94,6 +94,7 @@ Use this checklist to configure the bot safely.
 - [ ] Confirm the demo subscriber count matches the documented test scenario before capturing screenshots.
 - [ ] Confirm batch summaries expose aggregate counts only, never subscriber IDs or chat IDs.
 - [ ] Confirm the active demo-card count matches the documented test dataset before a portfolio run.
+- [ ] Confirm demo screenshots show only synthetic subscriber and delivery data.
 
 ---
 
