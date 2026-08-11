@@ -182,3 +182,5 @@ Maintenance note: verify a retried scheduled run does not send a second daily ca
 Maintenance note: confirm delivery history records failures separately from successful sends for easier retry checks.
 
 Maintenance note: verify retry logic targets only failed deliveries and never resends previously successful ones.
+
+Maintenance note: test schedule changes with a demo subscriber before applying a new delivery timezone to production.
