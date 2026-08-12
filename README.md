@@ -190,3 +190,5 @@ Maintenance note: keep a text-only fallback ready so a broken card image does no
 Maintenance note: confirm each demo card ID is unique and maps to exactly one caption and image reference.
 
 Maintenance note: keep documented card dataset paths synchronized with the current demo asset layout.
+
+Maintenance note: confirm demo subscriber screenshots use synthetic IDs and names only before portfolio publication.
