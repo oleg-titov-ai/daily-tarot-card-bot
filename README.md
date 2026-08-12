@@ -188,3 +188,5 @@ Maintenance note: test schedule changes with a demo subscriber before applying a
 Maintenance note: keep a text-only fallback ready so a broken card image does not block the daily message.
 
 Maintenance note: confirm each demo card ID is unique and maps to exactly one caption and image reference.
+
+Maintenance note: keep documented card dataset paths synchronized with the current demo asset layout.
