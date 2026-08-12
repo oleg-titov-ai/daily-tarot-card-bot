@@ -186,3 +186,5 @@ Maintenance note: verify retry logic targets only failed deliveries and never re
 Maintenance note: test schedule changes with a demo subscriber before applying a new delivery timezone to production.
 
 Maintenance note: keep a text-only fallback ready so a broken card image does not block the daily message.
+
+Maintenance note: confirm each demo card ID is unique and maps to exactly one caption and image reference.
