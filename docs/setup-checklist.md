@@ -18,7 +18,7 @@ Use this checklist to configure the bot safely.
 - [ ] Create PostgreSQL database.
 - [ ] Run `sql/001_schema.sql`.
 - [ ] Load demo cards from `sql/002_demo_data.sql`.
-- [ ] Verify active users and cards.
+- [ ] Verify active users and active cards before enabling the schedule.
 
 ---
 
