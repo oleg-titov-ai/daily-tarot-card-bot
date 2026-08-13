@@ -192,3 +192,5 @@ Maintenance note: confirm each demo card ID is unique and maps to exactly one ca
 Maintenance note: keep documented card dataset paths synchronized with the current demo asset layout.
 
 Maintenance note: confirm demo subscriber screenshots use synthetic IDs and names only before portfolio publication.
+
+Maintenance note: verify every referenced demo card asset exists before recording screenshots or publishing examples.
