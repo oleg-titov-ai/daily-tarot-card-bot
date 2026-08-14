@@ -76,6 +76,8 @@ Confirm card-image examples do not embed user-specific filenames, URLs, or priva
 
 Inspect image metadata and filenames before publication so local usernames or creation paths are not exposed accidentally.
 
+Confirm demo timestamps are clearly synthetic or generic and do not reveal actual subscriber activity windows.
+
 ---
 
 ## 🧯 If a Secret Was Committed
