@@ -74,6 +74,8 @@ Confirm demo delivery-history examples use synthetic user identifiers and timest
 
 Confirm card-image examples do not embed user-specific filenames, URLs, or private storage paths.
 
+Inspect image metadata and filenames before publication so local usernames or creation paths are not exposed accidentally.
+
 ---
 
 ## 🧯 If a Secret Was Committed
