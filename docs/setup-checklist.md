@@ -91,6 +91,7 @@ Use this checklist to configure the bot safely.
 - [ ] Define how long non-sensitive batch audit summaries are retained.
 - [ ] Confirm a new scheduled batch cannot start while the previous batch still holds its delivery lock.
 - [ ] Confirm the scheduler and database clocks do not differ enough to misclassify a batch as stale.
+- [ ] Confirm a stale batch lock can be recovered safely without resending already successful deliveries.
 - [ ] Confirm the demo subscriber count matches the documented test scenario before capturing screenshots.
 - [ ] Confirm batch summaries expose aggregate counts only, never subscriber IDs or chat IDs.
 - [ ] Confirm the active demo-card count matches the documented test dataset before a portfolio run.
