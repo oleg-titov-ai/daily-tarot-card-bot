@@ -97,6 +97,7 @@ Use this checklist to configure the bot safely.
 - [ ] Confirm the active demo-card count matches the documented test dataset before a portfolio run.
 - [ ] Confirm demo screenshots show only synthetic subscriber and delivery data.
 - [ ] Verify the same demo seed produces a reproducible card-selection test when deterministic behavior is required.
+- [ ] Confirm a demo batch can be rerun after clearing test state without leaving stale delivery locks.
 
 ---
 
