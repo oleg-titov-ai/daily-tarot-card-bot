@@ -194,3 +194,5 @@ Maintenance note: keep documented card dataset paths synchronized with the curre
 Maintenance note: confirm demo subscriber screenshots use synthetic IDs and names only before portfolio publication.
 
 Maintenance note: verify every referenced demo card asset exists before recording screenshots or publishing examples.
+
+Maintenance note: confirm overlapping schedule triggers cannot deliver two cards to the same demo subscriber for one local calendar day.
