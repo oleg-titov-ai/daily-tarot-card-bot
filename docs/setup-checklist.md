@@ -99,6 +99,7 @@ Use this checklist to configure the bot safely.
 - [ ] Verify the same demo seed produces a reproducible card-selection test when deterministic behavior is required.
 - [ ] Confirm a demo batch can be rerun after clearing test state without leaving stale delivery locks.
 - [ ] Reset demo delivery history before a new portfolio capture so batch counts start from a known baseline.
+- [ ] Confirm the first batch after a demo reset starts with no pending, retried, or failed delivery records.
 
 ---
 
