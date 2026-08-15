@@ -27,3 +27,5 @@ Open a GitHub issue with a safe description. Do not include tokens, private mess
 ## User Privacy
 
 A production version should store only the minimum required user data, support unsubscribe flows, and avoid publishing message history or subscriber data.
+
+Before publishing delivery examples, confirm subscriber identifiers and delivery timestamps are synthetic or intentionally non-sensitive.
