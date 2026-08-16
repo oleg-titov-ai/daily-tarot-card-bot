@@ -196,3 +196,5 @@ Maintenance note: confirm demo subscriber screenshots use synthetic IDs and name
 Maintenance note: verify every referenced demo card asset exists before recording screenshots or publishing examples.
 
 Maintenance note: confirm overlapping schedule triggers cannot deliver two cards to the same demo subscriber for one local calendar day.
+
+Maintenance note: verify a timezone change does not shift the same subscriber into two sends within one local date.
