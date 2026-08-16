@@ -78,6 +78,8 @@ Inspect image metadata and filenames before publication so local usernames or cr
 
 Confirm demo timestamps are clearly synthetic or generic and do not reveal actual subscriber activity windows.
 
+Confirm replacement card images are reviewed for embedded metadata before they are added to portfolio screenshots.
+
 ---
 
 ## 🧯 If a Secret Was Committed
