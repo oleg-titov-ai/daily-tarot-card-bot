@@ -29,6 +29,7 @@ logs/
 # Local delivery previews
 preview-deliveries/
 schedule-test-output/
+schedule-overlap-reports/
 delivery-audit-reports/
 card-preview-renders/
 delivery-retry-snapshots/
