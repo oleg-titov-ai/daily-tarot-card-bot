@@ -80,6 +80,8 @@ Confirm demo timestamps are clearly synthetic or generic and do not reveal actua
 
 Confirm replacement card images are reviewed for embedded metadata before they are added to portfolio screenshots.
 
+Confirm portfolio asset bundles contain only the card images referenced by the documented demo dataset.
+
 ---
 
 ## 🧯 If a Secret Was Committed
