@@ -101,6 +101,7 @@ Use this checklist to configure the bot safely.
 - [ ] Reset demo delivery history before a new portfolio capture so batch counts start from a known baseline.
 - [ ] Confirm the first batch after a demo reset starts with no pending, retried, or failed delivery records.
 - [ ] Confirm the demo batch baseline includes zero successful deliveries before capturing a fresh end-to-end walkthrough.
+- [ ] Save the aggregate demo batch summary with the walkthrough notes so screenshots can be checked against the recorded totals.
 
 ---
 
