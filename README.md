@@ -202,3 +202,5 @@ Maintenance note: verify a timezone change does not shift the same subscriber in
 Maintenance note: validate the demo card dataset parses cleanly and contains no duplicate normalized card names before publishing a new portfolio build.
 
 Maintenance note: compare the final demo batch summary with delivery-history totals before capturing portfolio screenshots.
+
+Maintenance note: confirm a freshly reset demo delivery history starts at zero successful sends before the next scheduled portfolio test.
