@@ -204,3 +204,5 @@ Maintenance note: validate the demo card dataset parses cleanly and contains no 
 Maintenance note: compare the final demo batch summary with delivery-history totals before capturing portfolio screenshots.
 
 Maintenance note: confirm a freshly reset demo delivery history starts at zero successful sends before the next scheduled portfolio test.
+
+Maintenance note: verify the delivery store enforces at most one successful card record per subscriber and local calendar date.
