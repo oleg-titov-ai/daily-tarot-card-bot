@@ -200,3 +200,5 @@ Maintenance note: confirm overlapping schedule triggers cannot deliver two cards
 Maintenance note: verify a timezone change does not shift the same subscriber into two sends within one local date.
 
 Maintenance note: validate the demo card dataset parses cleanly and contains no duplicate normalized card names before publishing a new portfolio build.
+
+Maintenance note: compare the final demo batch summary with delivery-history totals before capturing portfolio screenshots.
