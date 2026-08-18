@@ -33,6 +33,7 @@ schedule-overlap-reports/
 delivery-audit-reports/
 card-preview-renders/
 delivery-retry-snapshots/
+batch-baseline-checks/
 
 # Python cache
 __pycache__/
