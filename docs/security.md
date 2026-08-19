@@ -82,6 +82,8 @@ Confirm replacement card images are reviewed for embedded metadata before they a
 
 Confirm portfolio asset bundles contain only the card images referenced by the documented demo dataset.
 
+Record the public source or license note for any externally sourced demo image before including it in the repository.
+
 ---
 
 ## 🧯 If a Secret Was Committed
