@@ -103,6 +103,7 @@ Use this checklist to configure the bot safely.
 - [ ] Confirm the demo batch baseline includes zero successful deliveries before capturing a fresh end-to-end walkthrough.
 - [ ] Save the aggregate demo batch summary with the walkthrough notes so screenshots can be checked against the recorded totals.
 - [ ] Confirm the saved demo batch summary and persisted delivery totals still match after reopening the walkthrough notes.
+- [ ] Confirm the next demo run starts from a zeroed aggregate delivery baseline after cleanup.
 
 ---
 
