@@ -7,3 +7,4 @@
 - 2026-08-21: Verify a failed image lookup falls back to the documented text-only card response without recording a duplicate successful delivery.
 - 2026-08-21: Verify a retried demo delivery reuses the same logical delivery record rather than creating a second successful history entry for the same subscriber and local date.
 - 2026-08-21: Verify disabling and re-enabling the demo schedule does not replay previously completed deliveries for the same synthetic subscriber and local date.
+- 2026-08-21: Recheck the documented card-selection fallback after dataset changes so an invalid card entry fails safely without sending a partial or mismatched demo message.
