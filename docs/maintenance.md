@@ -12,3 +12,4 @@
 - 2026-08-22: Keep one documented date-boundary dry-run for the synthetic subscriber set so scheduler changes can be reviewed safely around local midnight transitions.
 - 2026-08-22: Before capturing a portfolio scheduler run, verify the synthetic delivery history starts from the documented empty baseline so screenshots cannot include stale successes from earlier tests.
 - 2026-08-22: Verify scheduler recovery after a simulated restart resumes from persisted synthetic delivery state without replaying already completed daily sends.
+- 2026-08-23: Keep one synthetic scheduler audit that compares selected card ID, rendered text, and delivery-history record so portfolio demos cannot show mismatched card content.
