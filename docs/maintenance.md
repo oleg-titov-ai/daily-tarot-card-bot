@@ -15,3 +15,4 @@
 - 2026-08-23: Keep one synthetic scheduler audit that compares selected card ID, rendered text, and delivery-history record so portfolio demos cannot show mismatched card content.
 - 2026-08-23: Verify a synthetic subscriber with an invalid timezone fails validation cleanly and cannot be silently scheduled against the server default timezone.
 - 2026-08-23: Keep scheduler audit notes aligned with the synthetic subscriber fixture, local delivery date, and card ID so repeated portfolio checks remain easy to compare.
+- 2026-08-23: After scheduler changes, compare the synthetic run summary with delivery history to confirm each successful local-date/card pair is represented exactly once.
