@@ -16,3 +16,4 @@
 - 2026-08-23: Verify a synthetic subscriber with an invalid timezone fails validation cleanly and cannot be silently scheduled against the server default timezone.
 - 2026-08-23: Keep scheduler audit notes aligned with the synthetic subscriber fixture, local delivery date, and card ID so repeated portfolio checks remain easy to compare.
 - 2026-08-23: After scheduler changes, compare the synthetic run summary with delivery history to confirm each successful local-date/card pair is represented exactly once.
+- 2026-08-24: Verify the documented no-subscribers dry-run exits cleanly with zero delivery records so an empty audience cannot be mistaken for a scheduler failure.
