@@ -17,3 +17,4 @@
 - 2026-08-23: Keep scheduler audit notes aligned with the synthetic subscriber fixture, local delivery date, and card ID so repeated portfolio checks remain easy to compare.
 - 2026-08-23: After scheduler changes, compare the synthetic run summary with delivery history to confirm each successful local-date/card pair is represented exactly once.
 - 2026-08-24: Verify the documented no-subscribers dry-run exits cleanly with zero delivery records so an empty audience cannot be mistaken for a scheduler failure.
+- 2026-08-24: Keep one synthetic scheduler check for a disabled subscriber and confirm it creates neither a delivery attempt nor a success-history record.
