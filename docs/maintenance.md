@@ -20,3 +20,4 @@
 - 2026-08-24: Keep one synthetic scheduler check for a disabled subscriber and confirm it creates neither a delivery attempt nor a success-history record.
 - 2026-08-24: Verify a dry-run records the intended local delivery date without writing a success-history entry, so audit output cannot be mistaken for an actual send.
 - 2026-08-24: Keep one synthetic check for a missing card asset and verify the run reports the issue clearly without marking the delivery as successful.
+- 2026-08-25: Keep scheduler audit output limited to synthetic subscriber labels, local date, card ID, and delivery status so portfolio diagnostics remain useful without retaining chat identifiers or message metadata.
