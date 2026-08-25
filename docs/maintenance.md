@@ -22,3 +22,4 @@
 - 2026-08-24: Keep one synthetic check for a missing card asset and verify the run reports the issue clearly without marking the delivery as successful.
 - 2026-08-25: Keep scheduler audit output limited to synthetic subscriber labels, local date, card ID, and delivery status so portfolio diagnostics remain useful without retaining chat identifiers or message metadata.
 - 2026-08-25: Verify the synthetic run summary totals match the underlying success, skipped, and failed delivery records before using the summary in portfolio documentation.
+- 2026-08-25: Keep scheduler summary field names stable and documented so portfolio comparisons remain readable when delivery internals change.
