@@ -25,3 +25,4 @@
 - 2026-08-25: Keep scheduler summary field names stable and documented so portfolio comparisons remain readable when delivery internals change.
 - 2026-08-25: Verify skipped synthetic deliveries include a clear non-sensitive reason code so scheduler summaries distinguish intentional skips from failures without exposing subscriber metadata.
 - 2026-08-26: Keep one synthetic leap-day/date-rollover case in scheduler maintenance notes so local-date logic remains explicit and idempotent across calendar edge cases.
+- 2026-08-26: Verify a synthetic subscriber timezone change between dry-runs cannot create two successful records for the same intended daily-card cycle.
