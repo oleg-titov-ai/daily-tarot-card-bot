@@ -24,3 +24,4 @@
 - 2026-08-25: Verify the synthetic run summary totals match the underlying success, skipped, and failed delivery records before using the summary in portfolio documentation.
 - 2026-08-25: Keep scheduler summary field names stable and documented so portfolio comparisons remain readable when delivery internals change.
 - 2026-08-25: Verify skipped synthetic deliveries include a clear non-sensitive reason code so scheduler summaries distinguish intentional skips from failures without exposing subscriber metadata.
+- 2026-08-26: Keep one synthetic leap-day/date-rollover case in scheduler maintenance notes so local-date logic remains explicit and idempotent across calendar edge cases.
