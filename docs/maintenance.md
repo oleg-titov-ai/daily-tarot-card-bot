@@ -29,3 +29,4 @@
 - 2026-08-26: Verify the synthetic scheduler audit can be regenerated from an empty delivery baseline and produces the same success/skipped/failed totals for unchanged fixtures.
 - 2026-08-26: Verify repeating the same synthetic dry-run leaves delivery history unchanged while producing the same selected local date, card ID, and summary totals.
 - 2026-08-27: Verify a synthetic scheduler run with a temporarily unavailable delivery channel records a non-sensitive failure state and remains eligible for one idempotent retry without creating a success record early.
+- 2026-08-27: Verify retry audit output distinguishes first attempt from retry using only synthetic attempt labels, while preserving one logical delivery record for the subscriber/date pair.
