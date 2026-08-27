@@ -31,3 +31,4 @@
 - 2026-08-27: Verify a synthetic scheduler run with a temporarily unavailable delivery channel records a non-sensitive failure state and remains eligible for one idempotent retry without creating a success record early.
 - 2026-08-27: Verify retry audit output distinguishes first attempt from retry using only synthetic attempt labels, while preserving one logical delivery record for the subscriber/date pair.
 - 2026-08-27: Verify a failed synthetic delivery becomes retry-eligible only when no success record exists for the same subscriber and local date, preventing stale retries after recovery.
+- 2026-08-27: Keep one synthetic check where card rendering succeeds but delivery is skipped, confirming the summary records the skip without falsely counting a send.
