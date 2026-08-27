@@ -28,3 +28,4 @@
 - 2026-08-26: Verify a synthetic subscriber timezone change between dry-runs cannot create two successful records for the same intended daily-card cycle.
 - 2026-08-26: Verify the synthetic scheduler audit can be regenerated from an empty delivery baseline and produces the same success/skipped/failed totals for unchanged fixtures.
 - 2026-08-26: Verify repeating the same synthetic dry-run leaves delivery history unchanged while producing the same selected local date, card ID, and summary totals.
+- 2026-08-27: Verify a synthetic scheduler run with a temporarily unavailable delivery channel records a non-sensitive failure state and remains eligible for one idempotent retry without creating a success record early.
