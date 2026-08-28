@@ -34,3 +34,4 @@
 - 2026-08-27: Keep one synthetic check where card rendering succeeds but delivery is skipped, confirming the summary records the skip without falsely counting a send.
 - 2026-08-28: Keep one synthetic scheduler check for forward and backward system-clock adjustments so local-date idempotency remains intact and completed daily deliveries are never replayed.
 - 2026-08-28: Verify restarting the scheduler after a completed synthetic delivery preserves the existing success record and does not enqueue the same subscriber/date pair again.
+- 2026-08-28: Verify a synthetic retry after process restart preserves the same logical delivery identity so recovery cannot create a second success record for the same subscriber and local date.
