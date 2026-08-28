@@ -35,3 +35,4 @@
 - 2026-08-28: Keep one synthetic scheduler check for forward and backward system-clock adjustments so local-date idempotency remains intact and completed daily deliveries are never replayed.
 - 2026-08-28: Verify restarting the scheduler after a completed synthetic delivery preserves the existing success record and does not enqueue the same subscriber/date pair again.
 - 2026-08-28: Verify a synthetic retry after process restart preserves the same logical delivery identity so recovery cannot create a second success record for the same subscriber and local date.
+- 2026-08-28: Document the synthetic retry backoff state with only attempt number and eligibility time so recovery checks remain reviewable without subscriber or message identifiers.
