@@ -38,3 +38,4 @@
 - 2026-08-28: Document the synthetic retry backoff state with only attempt number and eligibility time so recovery checks remain reviewable without subscriber or message identifiers.
 - 2026-08-29: Keep one synthetic scheduler check where the selected card is valid but the recipient is already completed for that local date, confirming the run records a skip and never attempts a second send.
 - 2026-08-29: Verify skipped synthetic deliveries remain excluded from success totals after summary regeneration so portfolio metrics cannot overstate completed sends.
+- 2026-08-29: Keep portfolio scheduler examples limited to synthetic recipient labels and aggregate counts so documentation never requires real chat IDs or message identifiers.
