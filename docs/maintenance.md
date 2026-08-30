@@ -40,3 +40,4 @@
 - 2026-08-29: Verify skipped synthetic deliveries remain excluded from success totals after summary regeneration so portfolio metrics cannot overstate completed sends.
 - 2026-08-29: Keep portfolio scheduler examples limited to synthetic recipient labels and aggregate counts so documentation never requires real chat IDs or message identifiers.
 - 2026-08-29: Keep documented scheduler examples anchored to fixed synthetic local dates so portfolio screenshots remain comparable without revealing real delivery timing.
+- 2026-08-30: Verify scheduler audit timestamps are clearly separated from the synthetic subscriber's local delivery date so portfolio logs cannot confuse processing time with idempotency keys.
