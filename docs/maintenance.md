@@ -41,3 +41,4 @@
 - 2026-08-29: Keep portfolio scheduler examples limited to synthetic recipient labels and aggregate counts so documentation never requires real chat IDs or message identifiers.
 - 2026-08-29: Keep documented scheduler examples anchored to fixed synthetic local dates so portfolio screenshots remain comparable without revealing real delivery timing.
 - 2026-08-30: Verify scheduler audit timestamps are clearly separated from the synthetic subscriber's local delivery date so portfolio logs cannot confuse processing time with idempotency keys.
+- 2026-08-30: Regenerate the synthetic scheduler summary twice from the same empty baseline and confirm aggregate counts and non-sensitive reason codes remain identical for unchanged fixtures.
