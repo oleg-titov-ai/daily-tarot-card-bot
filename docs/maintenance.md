@@ -44,3 +44,4 @@
 - 2026-08-30: Regenerate the synthetic scheduler summary twice from the same empty baseline and confirm aggregate counts and non-sensitive reason codes remain identical for unchanged fixtures.
 - 2026-08-30: Keep synthetic scheduler summaries sorted by stable fixture label so unchanged dry-runs remain easy to diff without exposing recipient identifiers.
 - 2026-08-30: Keep summary date labels explicit about synthetic local date versus audit generation date so portfolio screenshots cannot imply real delivery timing.
+- 2026-08-31: Verify a synthetic dry-run crossing a month boundary preserves one logical daily-delivery key per recipient and never converts the audit timestamp into the delivery date.
