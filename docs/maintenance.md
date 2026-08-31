@@ -46,3 +46,4 @@
 - 2026-08-30: Keep summary date labels explicit about synthetic local date versus audit generation date so portfolio screenshots cannot imply real delivery timing.
 - 2026-08-31: Verify a synthetic dry-run crossing a month boundary preserves one logical daily-delivery key per recipient and never converts the audit timestamp into the delivery date.
 - 2026-08-31: Verify a synthetic scheduler dry-run with no eligible recipients reports zero attempts without creating delivery-history rows or advancing retry state.
+- 2026-08-31: Verify resetting the synthetic scheduler fixture clears transient retry eligibility and audit-only state while preserving the documented empty delivery-history baseline.
