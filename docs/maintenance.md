@@ -48,3 +48,4 @@
 - 2026-08-31: Verify a synthetic scheduler dry-run with no eligible recipients reports zero attempts without creating delivery-history rows or advancing retry state.
 - 2026-08-31: Verify resetting the synthetic scheduler fixture clears transient retry eligibility and audit-only state while preserving the documented empty delivery-history baseline.
 - 2026-08-31: Verify a synthetic dry-run after fixture reset reproduces the same card-selection and zero-history baseline without carrying forward prior retry or audit markers.
+- 2026-09-01: Verify synthetic scheduler summaries use a stable card identifier for unchanged fixtures so portfolio diffs reflect real maintenance changes rather than selection noise.
