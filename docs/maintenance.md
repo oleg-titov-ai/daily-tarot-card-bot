@@ -52,3 +52,4 @@
 - 2026-09-02: Verify a synthetic scheduler dry-run with one invalid card entry reports that fixture as failed without affecting the deterministic results for other eligible recipients.
 - 2026-09-03: Verify an empty synthetic card dataset fails the dry-run clearly with zero delivery attempts and no delivery-history or retry-state writes.
 - 2026-09-03: Verify a synthetic card with valid text but a blank optional image reference follows the documented text-only path without changing success-count semantics.
+- 2026-09-03: Verify two synthetic recipients mapped to the same deterministic card in a dry-run remain separate delivery intents and never collapse into one history identity.
