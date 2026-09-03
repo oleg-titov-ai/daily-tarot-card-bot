@@ -51,3 +51,4 @@
 - 2026-09-01: Verify synthetic scheduler summaries use a stable card identifier for unchanged fixtures so portfolio diffs reflect real maintenance changes rather than selection noise.
 - 2026-09-02: Verify a synthetic scheduler dry-run with one invalid card entry reports that fixture as failed without affecting the deterministic results for other eligible recipients.
 - 2026-09-03: Verify an empty synthetic card dataset fails the dry-run clearly with zero delivery attempts and no delivery-history or retry-state writes.
+- 2026-09-03: Verify a synthetic card with valid text but a blank optional image reference follows the documented text-only path without changing success-count semantics.
