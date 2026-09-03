@@ -208,3 +208,5 @@ Maintenance note: confirm a freshly reset demo delivery history starts at zero s
 Maintenance note: verify the delivery store enforces at most one successful card record per subscriber and local calendar date.
 
 Maintenance note: after a scheduled demo run, verify the reported success/failure totals exactly match the persisted delivery-history rows.
+
+Maintenance note: verify a synthetic dry-run with an unavailable image fallback records a safe failure without creating a success-history row.
