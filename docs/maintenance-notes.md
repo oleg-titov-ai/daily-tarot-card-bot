@@ -9,6 +9,7 @@ This file keeps lightweight maintenance rules for the Daily Tarot Card Bot repos
 - Review scheduled-message behavior after workflow changes.
 - Document user privacy assumptions.
 - Update project notes when product scope changes.
+- Verify scheduler retries preserve the original synthetic card and local-date identity instead of selecting a different card.
 
 ## Safe Data Rules
 
