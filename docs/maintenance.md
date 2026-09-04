@@ -53,3 +53,4 @@
 - 2026-09-03: Verify an empty synthetic card dataset fails the dry-run clearly with zero delivery attempts and no delivery-history or retry-state writes.
 - 2026-09-03: Verify a synthetic card with valid text but a blank optional image reference follows the documented text-only path without changing success-count semantics.
 - 2026-09-03: Verify two synthetic recipients mapped to the same deterministic card in a dry-run remain separate delivery intents and never collapse into one history identity.
+- 2026-09-04: Verify two overlapping synthetic scheduler triggers for the same recipient and local date resolve to one logical delivery intent with no duplicate success history.
