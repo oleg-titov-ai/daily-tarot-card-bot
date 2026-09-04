@@ -55,3 +55,4 @@
 - 2026-09-03: Verify two synthetic recipients mapped to the same deterministic card in a dry-run remain separate delivery intents and never collapse into one history identity.
 - 2026-09-04: Verify two overlapping synthetic scheduler triggers for the same recipient and local date resolve to one logical delivery intent with no duplicate success history.
 - 2026-09-04: Verify a synthetic scheduler retry after a transient channel failure preserves the original card and local-date identity instead of selecting a new card.
+- 2026-09-04: Verify a scheduler dry-run while delivery is globally disabled reports the intended synthetic recipients without creating attempts, retries, or success-history records.
