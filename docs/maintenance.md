@@ -59,3 +59,4 @@
 - 2026-09-05: Verify a synthetic recipient removed between selection and delivery is skipped cleanly without creating retry or success history for the now-ineligible recipient.
 - 2026-09-05: Verify a synthetic recipient becoming disabled after selection is treated as ineligible at delivery time and does not create a retry or success-history record.
 - 2026-09-05: Verify duplicate card identifiers in the synthetic dataset fail validation before selection or delivery so one logical card ID cannot resolve to ambiguous content.
+- 2026-09-05: Verify a synthetic card with a blank required text field fails dataset validation before selection or delivery, with zero attempts, retries, or success-history writes.
