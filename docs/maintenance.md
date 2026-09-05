@@ -56,3 +56,4 @@
 - 2026-09-04: Verify two overlapping synthetic scheduler triggers for the same recipient and local date resolve to one logical delivery intent with no duplicate success history.
 - 2026-09-04: Verify a synthetic scheduler retry after a transient channel failure preserves the original card and local-date identity instead of selecting a new card.
 - 2026-09-04: Verify a scheduler dry-run while delivery is globally disabled reports the intended synthetic recipients without creating attempts, retries, or success-history records.
+- 2026-09-05: Verify a synthetic recipient removed between selection and delivery is skipped cleanly without creating retry or success history for the now-ineligible recipient.
