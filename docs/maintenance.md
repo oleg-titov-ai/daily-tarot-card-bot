@@ -1,6 +1,6 @@
 # Maintenance
 
-> Current maintenance focus (2026-09-14): preserve one logical delivery per recipient, local date, and card across overlap, retry, restart, and crash-recovery paths.
+> Current maintenance focus (2026-09-14): reconcile persisted claims and provider acknowledgement before any retry, preserving one stable recipient/local-date/card identity through overlap, restart, and ambiguous delivery outcomes.
 
 - 2026-08-19: Keep scheduled-delivery checks idempotent: one subscriber should have at most one successful card delivery per local calendar date, including retries and overlapping triggers.
 - 2026-08-20: Keep the demo card dataset validation in the release checklist so every referenced image and card identifier resolves before a scheduled portfolio run.
