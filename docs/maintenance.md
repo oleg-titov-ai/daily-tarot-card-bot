@@ -71,3 +71,4 @@
 - 2026-09-08: Verify an expired synthetic delivery claim can be safely reclaimed after a worker crash without creating a second success record or changing the original recipient/date/card identity.
 - 2026-09-09: Verify a worker crash after the delivery channel accepts a synthetic send but before local success persistence is reconciled conservatively, preventing an automatic blind resend from creating a duplicate daily card.
 - 2026-09-14: Before retrying an ambiguous synthetic delivery result, reconcile the original delivery identity or provider acknowledgement first and reuse the same recipient/date/card key rather than issuing a blind second send.
+- 2026-09-15: When the delivery provider supports an idempotency key, derive and reuse it from the stable recipient/local-date/card identity across retries so provider-side deduplication reinforces local reconciliation.
