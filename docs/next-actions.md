@@ -7,7 +7,7 @@ Small practical improvements to consider next.
 - Link product documentation from the README.
 - Add a demo user journey.
 - Add safe sample messages.
-- Clarify scheduling behavior.
+- Document idempotent retry behavior for ambiguous deliveries.
 
 ## Medium Term
 
