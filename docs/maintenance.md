@@ -1,6 +1,6 @@
 # Maintenance
 
-> Current maintenance focus (2026-09-15): treat the persisted delivery claim, stable recipient/local-date/card identity, and provider acknowledgement as one crash-safe reconciliation record so retries can resume deterministically without blind resends or duplicate daily deliveries.
+> Current maintenance focus (2026-09-16): treat the persisted delivery claim, stable recipient/local-date/card identity, provider idempotency key, and provider acknowledgement as one crash-safe reconciliation record; persist that identity before send so retries can resume deterministically without blind resends or duplicate daily deliveries.
 
 - 2026-08-19: Keep scheduled-delivery checks idempotent: one subscriber should have at most one successful card delivery per local calendar date, including retries and overlapping triggers.
 - 2026-08-20: Keep the demo card dataset validation in the release checklist so every referenced image and card identifier resolves before a scheduled portfolio run.
