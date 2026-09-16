@@ -212,3 +212,5 @@ Maintenance note: after a scheduled demo run, verify the reported success/failur
 Maintenance note: verify a synthetic dry-run with an unavailable image fallback records a safe failure without creating a success-history row.
 
 Maintenance note: reconcile an ambiguous provider result against the original delivery identity before any retry is attempted.
+
+Maintenance note: persist the delivery identity before sending so a restart can reuse the same idempotency key instead of issuing a blind second delivery.
