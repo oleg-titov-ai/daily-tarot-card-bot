@@ -10,6 +10,7 @@ Small practical improvements to consider next.
 - Document idempotent retry behavior for ambiguous deliveries.
 - Add a restart-recovery check that reuses the persisted delivery identity before any retry.
 - Add a simulated crash-after-provider-acceptance recovery check before permitting a resend.
+- Add a reconciliation check where provider lookup confirms prior delivery and local success state is repaired without resending.
 
 ## Medium Term
 
