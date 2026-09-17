@@ -9,6 +9,7 @@ Small practical improvements to consider next.
 - Add safe sample messages.
 - Document idempotent retry behavior for ambiguous deliveries.
 - Add a restart-recovery check that reuses the persisted delivery identity before any retry.
+- Add a simulated crash-after-provider-acceptance recovery check before permitting a resend.
 
 ## Medium Term
 
