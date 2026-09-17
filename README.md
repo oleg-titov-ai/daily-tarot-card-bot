@@ -214,3 +214,5 @@ Maintenance note: verify a synthetic dry-run with an unavailable image fallback 
 Maintenance note: reconcile an ambiguous provider result against the original delivery identity before any retry is attempted.
 
 Maintenance note: persist the delivery identity before sending so a restart can reuse the same idempotency key instead of issuing a blind second delivery.
+
+Maintenance note: store provider acknowledgement only after matching it to the same persisted delivery identity and idempotency key used for the original send.
