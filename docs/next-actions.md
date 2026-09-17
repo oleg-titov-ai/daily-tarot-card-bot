@@ -8,6 +8,7 @@ Small practical improvements to consider next.
 - Add a demo user journey.
 - Add safe sample messages.
 - Document idempotent retry behavior for ambiguous deliveries.
+- Add a restart-recovery check that reuses the persisted delivery identity before any retry.
 
 ## Medium Term
 
