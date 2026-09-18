@@ -12,6 +12,7 @@ Small practical improvements to consider next.
 - Add a simulated crash-after-provider-acceptance recovery check before permitting a resend.
 - Add a reconciliation check where provider lookup confirms prior delivery and local success state is repaired without resending.
 - Add a recovery check that every retry reuses the same provider idempotency key as the original delivery claim.
+- Add a provider-timeout check that reconciles the original delivery identity before any resend is attempted.
 
 ## Medium Term
 
