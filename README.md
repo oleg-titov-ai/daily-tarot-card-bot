@@ -215,4 +215,4 @@ Maintenance note: reconcile an ambiguous provider result against the original de
 
 Maintenance note: persist the delivery identity before sending so a restart can reuse the same idempotency key instead of issuing a blind second delivery.
 
-Maintenance note: accept provider acknowledgement only when it matches the persisted delivery identity and idempotency key; keep ambiguous results pending reconciliation instead of treating them as success.
+Maintenance note: match provider acknowledgement to the stored delivery identity and idempotency key; reconcile timeouts before retrying the same subscriber and local date.
