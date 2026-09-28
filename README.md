@@ -218,3 +218,5 @@ Maintenance note: persist the delivery identity before sending so a restart can 
 Maintenance note: match provider acknowledgement to the stored delivery identity and idempotency key; reconcile timeouts before retrying the same subscriber and local date.
 
 Maintenance note: verify a recovered delivery keeps one success record and one user-visible card for each subscriber and local date.
+
+Maintenance note: verify a retry after an ambiguous delivery result produces one visible card and one success record per subscriber/date.
