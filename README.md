@@ -222,3 +222,5 @@ Maintenance note: verify a recovered delivery keeps one success record and one u
 Maintenance note: verify a retry after an ambiguous delivery result produces one visible card and one success record per subscriber/date.
 
 Maintenance note: verify recovery reuses the original provider delivery identity before retrying an ambiguous result.
+
+Maintenance note: verify one provider acknowledgement produces one success record per subscriber and local date after recovery.
