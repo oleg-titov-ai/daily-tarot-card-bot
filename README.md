@@ -226,3 +226,5 @@ Maintenance note: verify recovery reuses the original provider delivery identity
 Maintenance note: verify one provider acknowledgement produces one success record per subscriber and local date after recovery.
 
 Maintenance note: verify an ambiguous provider acknowledgement is reconciled against subscriber and local-date identity before retry.
+
+Maintenance note: verify a provider timeout is reconciled before retry so one subscriber/date receives only one visible card.
