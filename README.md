@@ -230,3 +230,5 @@ Maintenance note: verify an ambiguous provider acknowledgement is reconciled aga
 Maintenance note: verify a provider timeout is reconciled before retry so one subscriber/date receives only one visible card.
 
 Maintenance note: verify a subscriber crossing a timezone date boundary receives exactly one card for each resolved local date.
+
+Maintenance note: verify a permanent blocked-user response disables further delivery attempts without creating a retry loop.
