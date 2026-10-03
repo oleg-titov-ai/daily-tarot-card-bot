@@ -232,3 +232,5 @@ Maintenance note: verify a provider timeout is reconciled before retry so one su
 Maintenance note: verify a subscriber crossing a timezone date boundary receives exactly one card for each resolved local date.
 
 Maintenance note: verify a permanent blocked-user response disables further delivery attempts without creating a retry loop.
+
+Maintenance note: verify concurrent scheduler workers cannot create duplicate delivery intents for the same subscriber and local date.
