@@ -238,3 +238,5 @@ Maintenance note: verify concurrent scheduler workers cannot create duplicate de
 Maintenance note: verify invalid or missing subscriber timezone data falls back deterministically without creating duplicate daily deliveries.
 
 Maintenance note: document the local-time boundary used to decide whether today's card has already been delivered after a restart.
+
+Maintenance note: document when delivery is recorded relative to Telegram acknowledgement so retries cannot duplicate a daily card.
