@@ -242,3 +242,5 @@ Maintenance note: document the local-time boundary used to decide whether today'
 Maintenance note: document when delivery is recorded relative to Telegram acknowledgement so retries cannot duplicate a daily card.
 
 Maintenance note: document how blocked users are removed from active delivery attempts while preserving non-sensitive delivery history.
+
+Maintenance note: document the scheduler-lock strategy that prevents duplicate daily deliveries when multiple workers start.
