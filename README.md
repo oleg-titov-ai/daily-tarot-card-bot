@@ -240,3 +240,5 @@ Maintenance note: verify invalid or missing subscriber timezone data falls back 
 Maintenance note: document the local-time boundary used to decide whether today's card has already been delivered after a restart.
 
 Maintenance note: document when delivery is recorded relative to Telegram acknowledgement so retries cannot duplicate a daily card.
+
+Maintenance note: document how blocked users are removed from active delivery attempts while preserving non-sensitive delivery history.
