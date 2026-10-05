@@ -244,3 +244,5 @@ Maintenance note: document when delivery is recorded relative to Telegram acknow
 Maintenance note: document how blocked users are removed from active delivery attempts while preserving non-sensitive delivery history.
 
 Maintenance note: document the scheduler-lock strategy that prevents duplicate daily deliveries when multiple workers start.
+
+Maintenance note: document delivery behavior across daylight-saving transitions and other local timezone offset changes.
