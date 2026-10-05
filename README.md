@@ -248,3 +248,5 @@ Maintenance note: document the scheduler-lock strategy that prevents duplicate d
 Maintenance note: document delivery behavior across daylight-saving transitions and other local timezone offset changes.
 
 Maintenance note: document aggregate reporting for partial delivery failures without exposing subscriber identifiers.
+
+Maintenance note: verify a content-generation timeout never marks the daily card as delivered before a message is accepted.
