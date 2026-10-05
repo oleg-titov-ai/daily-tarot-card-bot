@@ -250,3 +250,5 @@ Maintenance note: document delivery behavior across daylight-saving transitions 
 Maintenance note: document aggregate reporting for partial delivery failures without exposing subscriber identifiers.
 
 Maintenance note: verify a content-generation timeout never marks the daily card as delivered before a message is accepted.
+
+Maintenance note: document content length and formatting validation performed before a generated daily card is sent.
