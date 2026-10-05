@@ -254,3 +254,5 @@ Maintenance note: verify a content-generation timeout never marks the daily card
 Maintenance note: document content length and formatting validation performed before a generated daily card is sent.
 
 - Document the deterministic fallback used when generated card content fails validation.
+
+- Document how scheduled delivery behaves when a user's timezone setting is missing or invalid.
