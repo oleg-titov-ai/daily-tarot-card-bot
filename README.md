@@ -246,3 +246,5 @@ Maintenance note: document how blocked users are removed from active delivery at
 Maintenance note: document the scheduler-lock strategy that prevents duplicate daily deliveries when multiple workers start.
 
 Maintenance note: document delivery behavior across daylight-saving transitions and other local timezone offset changes.
+
+Maintenance note: document aggregate reporting for partial delivery failures without exposing subscriber identifiers.
