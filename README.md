@@ -258,3 +258,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document how scheduled delivery behaves when a user's timezone setting is missing or invalid.
 
 - Document how retries preserve one-card-per-day semantics after an interrupted delivery attempt.
+
+- Document how blocked-user responses are recorded without repeatedly retrying permanent delivery failures.
