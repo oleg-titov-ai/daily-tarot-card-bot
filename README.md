@@ -264,3 +264,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document the default delivery window and how missed sends are handled after scheduler downtime.
 
 - Document how content-generation retries avoid sending different card interpretations for the same daily draw.
+
+- Document the procedure for resuming scheduled sends after maintenance without duplicating already delivered cards.
