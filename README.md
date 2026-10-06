@@ -256,3 +256,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document the deterministic fallback used when generated card content fails validation.
 
 - Document how scheduled delivery behaves when a user's timezone setting is missing or invalid.
+
+- Document how retries preserve one-card-per-day semantics after an interrupted delivery attempt.
