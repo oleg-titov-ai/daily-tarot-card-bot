@@ -262,3 +262,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document how blocked-user responses are recorded without repeatedly retrying permanent delivery failures.
 
 - Document the default delivery window and how missed sends are handled after scheduler downtime.
+
+- Document how content-generation retries avoid sending different card interpretations for the same daily draw.
