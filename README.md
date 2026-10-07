@@ -272,3 +272,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document how delivery metrics exclude test accounts and manual preview messages from production totals.
 
 - Document how queued daily messages are cancelled when a user opts out before delivery.
+
+- Document how scheduler health is verified when no users are currently eligible for delivery.
