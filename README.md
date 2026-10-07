@@ -268,3 +268,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document the procedure for resuming scheduled sends after maintenance without duplicating already delivered cards.
 
 - Document how a user's delivery preference change is applied when a daily message is already queued.
+
+- Document how delivery metrics exclude test accounts and manual preview messages from production totals.
