@@ -274,3 +274,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document how queued daily messages are cancelled when a user opts out before delivery.
 
 - Document how scheduler health is verified when no users are currently eligible for delivery.
+
+- Document the stable daily-draw identifier used to preserve one interpretation across generation and delivery retries.
