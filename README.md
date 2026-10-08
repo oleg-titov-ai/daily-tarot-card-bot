@@ -282,3 +282,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document retention and cleanup rules for daily-draw identifiers after their retry window has expired.
 
 - Document how an already generated daily card is handled when delivery crosses into the user's next local day.
+
+- Document how delivery metrics use stable attempt identifiers so retries do not inflate failure counts.
