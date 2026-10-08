@@ -280,3 +280,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document how scheduler clock corrections are handled without skipping or duplicating a user's daily delivery.
 
 - Document retention and cleanup rules for daily-draw identifiers after their retry window has expired.
+
+- Document how an already generated daily card is handled when delivery crosses into the user's next local day.
