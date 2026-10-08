@@ -278,3 +278,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document the stable daily-draw identifier used to preserve one interpretation across generation and delivery retries.
 
 - Document how scheduler clock corrections are handled without skipping or duplicating a user's daily delivery.
+
+- Document retention and cleanup rules for daily-draw identifiers after their retry window has expired.
