@@ -292,3 +292,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document the generation-provider version recorded with a daily card so later retries remain auditable.
 
 - Document how missed-delivery recovery respects a timezone change made after the original delivery window.
+
+- Document how scheduler-run identifiers correlate duplicate wake-ups in metrics without exposing subscriber information.
