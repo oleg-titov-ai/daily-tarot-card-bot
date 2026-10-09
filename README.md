@@ -286,3 +286,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document how delivery metrics use stable attempt identifiers so retries do not inflate failure counts.
 
 - Document the content-template version recorded with each daily draw for consistent retry behavior.
+
+- Document how a language preference change is applied when today's card is generated but not yet delivered.
