@@ -288,3 +288,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document the content-template version recorded with each daily draw for consistent retry behavior.
 
 - Document how a language preference change is applied when today's card is generated but not yet delivered.
+
+- Document the generation-provider version recorded with a daily card so later retries remain auditable.
