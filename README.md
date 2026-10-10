@@ -302,3 +302,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document accessible text-only delivery when a card image asset is missing or fails validation.
 
 - Document how an opt-out received during queued delivery cancels unsent daily-card messages.
+
+- Document deck-version migration so a content refresh does not repeat a subscriber's card for the same local date.
