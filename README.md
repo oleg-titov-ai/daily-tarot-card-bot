@@ -294,3 +294,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document how missed-delivery recovery respects a timezone change made after the original delivery window.
 
 - Document how scheduler-run identifiers correlate duplicate wake-ups in metrics without exposing subscriber information.
+
+- Document the safe content fallback used when a card record is missing optional metadata at delivery time.
