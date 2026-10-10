@@ -296,3 +296,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document how scheduler-run identifiers correlate duplicate wake-ups in metrics without exposing subscriber information.
 
 - Document the safe content fallback used when a card record is missing optional metadata at delivery time.
+
+- Document scheduled-date validation around daylight-saving transitions so each subscriber receives at most one daily card.
