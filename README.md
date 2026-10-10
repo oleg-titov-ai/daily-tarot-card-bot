@@ -298,3 +298,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document the safe content fallback used when a card record is missing optional metadata at delivery time.
 
 - Document scheduled-date validation around daylight-saving transitions so each subscriber receives at most one daily card.
+
+- Document accessible text-only delivery when a card image asset is missing or fails validation.
