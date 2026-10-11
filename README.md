@@ -308,3 +308,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document locale fallback behavior when a card translation is incomplete or unavailable at send time.
 
 - Document quiet-hour handling when a subscriber's delivery window crosses local midnight.
+
+- Document bounded retry behavior after a subscriber blocks the bot so failed daily deliveries do not loop indefinitely.
