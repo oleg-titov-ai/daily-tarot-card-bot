@@ -306,3 +306,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document deck-version migration so a content refresh does not repeat a subscriber's card for the same local date.
 
 - Document locale fallback behavior when a card translation is incomplete or unavailable at send time.
+
+- Document quiet-hour handling when a subscriber's delivery window crosses local midnight.
