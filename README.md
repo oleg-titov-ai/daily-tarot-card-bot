@@ -310,3 +310,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document quiet-hour handling when a subscriber's delivery window crosses local midnight.
 
 - Document bounded retry behavior after a subscriber blocks the bot so failed daily deliveries do not loop indefinitely.
+
+- Document how a pending scheduled delivery is re-evaluated when the subscriber changes timezone before it is sent.
