@@ -320,3 +320,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document rollback steps for a card-content release when validation fails after scheduled delivery begins.
 
 - Document localization checks for escaped Markdown and message-length limits before new card text is released.
+
+- Document fallback behavior when a cached Telegram media identifier is no longer valid at delivery time.
