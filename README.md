@@ -326,3 +326,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document subscriber deduplication when importing or migrating scheduling data between environments.
 
 - Document scheduler lease ownership so parallel workers cannot send the same subscriber's daily card twice.
+
+- Document subscription-consent timestamps without retaining unnecessary message content or profile details.
