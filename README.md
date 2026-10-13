@@ -328,3 +328,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document scheduler lease ownership so parallel workers cannot send the same subscriber's daily card twice.
 
 - Document subscription-consent timestamps without retaining unnecessary message content or profile details.
+
+- Document validation of subscriber timezones against canonical IANA identifiers before scheduling deliveries.
