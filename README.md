@@ -324,3 +324,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document fallback behavior when a cached Telegram media identifier is no longer valid at delivery time.
 
 - Document subscriber deduplication when importing or migrating scheduling data between environments.
+
+- Document scheduler lease ownership so parallel workers cannot send the same subscriber's daily card twice.
