@@ -332,3 +332,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document validation of subscriber timezones against canonical IANA identifiers before scheduling deliveries.
 
 - Document deterministic card-selection seeds for test environments without exposing or reusing production subscriber identifiers.
+
+- Document delivery fallback when Telegram rejects scheduled media because the uploaded file exceeds current size limits.
