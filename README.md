@@ -330,3 +330,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document subscription-consent timestamps without retaining unnecessary message content or profile details.
 
 - Document validation of subscriber timezones against canonical IANA identifiers before scheduling deliveries.
+
+- Document deterministic card-selection seeds for test environments without exposing or reusing production subscriber identifiers.
