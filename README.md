@@ -333,4 +333,4 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document deterministic card-selection seeds for test environments without exposing or reusing production subscriber identifiers.
 
-- Document delivery fallback when Telegram rejects scheduled media because the uploaded file exceeds current size limits.
+- Document delivery fallback when Telegram rejects scheduled media because the uploaded file exceeds current size limits; simulate the rejection with synthetic subscriber data and verify the text-only fallback preserves the original daily draw and records success only after acknowledgement.
