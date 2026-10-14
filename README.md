@@ -327,7 +327,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document scheduler lease ownership so parallel workers cannot send the same subscriber's daily card twice.
 
-- Document subscription-consent timestamps without retaining unnecessary message content or profile details.
+- Document subscription-consent timestamps without retaining unnecessary message content or profile details; use a synthetic opt-in event to specify timestamp format, consent source, and fields intentionally omitted from public diagnostics.
 
 - Document validation of subscriber timezones against canonical IANA identifiers before scheduling deliveries; include valid, unknown, and missing timezone values in synthetic subscriber fixtures and state the expected validation or fallback outcome for each.
 
