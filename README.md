@@ -329,7 +329,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document subscription-consent timestamps without retaining unnecessary message content or profile details.
 
-- Document validation of subscriber timezones against canonical IANA identifiers before scheduling deliveries.
+- Document validation of subscriber timezones against canonical IANA identifiers before scheduling deliveries; include valid, unknown, and missing timezone values in synthetic subscriber fixtures and state the expected validation or fallback outcome for each.
 
 - Document deterministic card-selection seeds for test environments without exposing or reusing production subscriber identifiers; record the test seed and deck version, then verify repeated runs select the same card from the unchanged demo deck.
 
