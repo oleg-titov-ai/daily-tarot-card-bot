@@ -313,7 +313,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document how a pending scheduled delivery is re-evaluated when the subscriber changes timezone before it is sent.
 
-- Document deduplication of Telegram update identifiers after a restart so commands are not processed twice.
+- Document deduplication of Telegram update identifiers after a restart so commands are not processed twice; replay one synthetic update identifier before and after restart to specify persistence and retention behavior and verify the command handler records only one execution.
 
 - Document validation of card image references during content updates so scheduled messages never contain broken media.
 
