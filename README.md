@@ -325,7 +325,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document subscriber deduplication when importing or migrating scheduling data between environments.
 
-- Document scheduler lease ownership so parallel workers cannot send the same subscriber's daily card twice.
+- Document scheduler lease ownership so parallel workers cannot send the same subscriber's daily card twice; simulate two workers contending for one synthetic delivery and specify that only the lease owner may send while a former owner cannot act after lease expiry.
 
 - Document subscription-consent timestamps without retaining unnecessary message content or profile details; use a synthetic opt-in event to specify timestamp format, consent source, and fields intentionally omitted from public diagnostics.
 
