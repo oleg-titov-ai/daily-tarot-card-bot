@@ -315,7 +315,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document deduplication of Telegram update identifiers after a restart so commands are not processed twice; replay one synthetic update identifier before and after restart to specify persistence and retention behavior and verify the command handler records only one execution.
 
-- Document validation of card image references during content updates so scheduled messages never contain broken media.
+- Document validation of card image references during content updates so scheduled messages never contain broken media; check synthetic valid, missing, and wrong-type references before release, and specify that validation failure preserves the previously active card content.
 
 - Document rollback steps for a card-content release when validation fails after scheduled delivery begins.
 
