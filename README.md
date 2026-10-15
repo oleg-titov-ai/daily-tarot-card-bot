@@ -321,7 +321,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document localization checks for escaped Markdown and message-length limits before new card text is released.
 
-- Document fallback behavior when a cached Telegram media identifier is no longer valid at delivery time.
+- Document fallback behavior when a cached Telegram media identifier is no longer valid at delivery time; mock an explicit invalid-media rejection and specify fallback selection separately from an ambiguous timeout so retries do not blindly duplicate a daily card.
 
 - Document subscriber deduplication when importing or migrating scheduling data between environments.
 
