@@ -317,7 +317,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document validation of card image references during content updates so scheduled messages never contain broken media; check synthetic valid, missing, and wrong-type references before release, and specify that validation failure preserves the previously active card content.
 
-- Document rollback steps for a card-content release when validation fails after scheduled delivery begins.
+- Document rollback steps for a card-content release when validation fails after scheduled delivery begins; use a synthetic active release with one invalid card to specify how remaining deliveries stop, the prior content version is restored, and already delivered cards are not resent.
 
 - Document localization checks for escaped Markdown and message-length limits before new card text is released.
 
