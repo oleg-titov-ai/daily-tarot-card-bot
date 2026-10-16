@@ -319,7 +319,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document rollback steps for a card-content release when validation fails after scheduled delivery begins; use a synthetic active release with one invalid card to specify how remaining deliveries stop, the prior content version is restored, and already delivered cards are not resent.
 
-- Document localization checks for escaped Markdown and message-length limits before new card text is released.
+- Document localization checks for escaped Markdown and message-length limits before new card text is released; use synthetic non-Latin text, emoji, and formatting punctuation just below, at, and above the configured limit to specify validation outcomes without silently truncating card meaning.
 
 - Document fallback behavior when a cached Telegram media identifier is no longer valid at delivery time; mock an explicit invalid-media rejection and specify fallback selection separately from an ambiguous timeout so retries do not blindly duplicate a daily card.
 
