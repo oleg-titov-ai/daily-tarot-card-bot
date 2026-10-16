@@ -323,7 +323,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document fallback behavior when a cached Telegram media identifier is no longer valid at delivery time; mock an explicit invalid-media rejection and specify fallback selection separately from an ambiguous timeout so retries do not blindly duplicate a daily card.
 
-- Document subscriber deduplication when importing or migrating scheduling data between environments.
+- Document subscriber deduplication when importing or migrating scheduling data between environments; use synthetic duplicate subscriber keys with conflicting timezone or opt-out values to define conflict resolution, preserve opt-out, and verify only one active schedule remains.
 
 - Document scheduler lease ownership so parallel workers cannot send the same subscriber's daily card twice; simulate two workers contending for one synthetic delivery and specify that only the lease owner may send while a former owner cannot act after lease expiry.
 
