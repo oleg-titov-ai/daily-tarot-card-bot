@@ -309,7 +309,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document quiet-hour handling when a subscriber's delivery window crosses local midnight.
 
-- Document bounded retry behavior after a subscriber blocks the bot so failed daily deliveries do not loop indefinitely.
+- Document bounded retry behavior after a subscriber blocks the bot so failed daily deliveries do not loop indefinitely; mock an explicit blocked-bot rejection separately from a transient timeout to specify terminal delivery status, retry limits, and reactivation only after a new subscriber interaction.
 
 - Document how a pending scheduled delivery is re-evaluated when the subscriber changes timezone before it is sent; use a synthetic move across midnight to define the delivery-day key, next eligible time, and treatment of an already delivered card without sending twice.
 
