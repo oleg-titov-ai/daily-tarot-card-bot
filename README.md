@@ -307,7 +307,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document locale fallback behavior when a card translation is incomplete or unavailable at send time.
 
-- Document quiet-hour handling when a subscriber's delivery window crosses local midnight.
+- Document quiet-hour handling when a subscriber's delivery window crosses local midnight; use a synthetic overnight interval to define inclusive and exclusive boundaries, next eligible local time, and whether a deferred card is skipped or delivered once after quiet hours end.
 
 - Document bounded retry behavior after a subscriber blocks the bot so failed daily deliveries do not loop indefinitely; mock an explicit blocked-bot rejection separately from a transient timeout to specify terminal delivery status, retry limits, and reactivation only after a new subscriber interaction.
 
