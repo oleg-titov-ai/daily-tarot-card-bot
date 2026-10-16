@@ -311,7 +311,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document bounded retry behavior after a subscriber blocks the bot so failed daily deliveries do not loop indefinitely.
 
-- Document how a pending scheduled delivery is re-evaluated when the subscriber changes timezone before it is sent.
+- Document how a pending scheduled delivery is re-evaluated when the subscriber changes timezone before it is sent; use a synthetic move across midnight to define the delivery-day key, next eligible time, and treatment of an already delivered card without sending twice.
 
 - Document deduplication of Telegram update identifiers after a restart so commands are not processed twice; replay one synthetic update identifier before and after restart to specify persistence and retention behavior and verify the command handler records only one execution.
 
