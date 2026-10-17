@@ -301,7 +301,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document accessible text-only delivery when a card image asset is missing or fails validation.
 
-- Document how an opt-out received during queued delivery cancels unsent daily-card messages.
+- Document how an opt-out received during queued delivery cancels unsent daily-card messages; use a synthetic queued job paused before send to specify a final subscription check, cancellation status, and restart persistence without attempting to recall already delivered messages.
 
 - Document deck-version migration so a content refresh does not repeat a subscriber's card for the same local date; use synthetic delivered and pending records across a deck upgrade to define version assignment, preserve delivery-day deduplication, and handle removed card identifiers explicitly.
 
