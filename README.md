@@ -299,7 +299,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document scheduled-date validation around daylight-saving transitions so each subscriber receives at most one daily card.
 
-- Document accessible text-only delivery when a card image asset is missing or fails validation.
+- Document accessible text-only delivery when a card image asset is missing or fails validation; use synthetic missing and invalid assets to specify a complete card title and meaning in the text fallback, preserve the selected card, and verify only one delivery is acknowledged.
 
 - Document how an opt-out received during queued delivery cancels unsent daily-card messages; use a synthetic queued job paused before send to specify a final subscription check, cancellation status, and restart persistence without attempting to recall already delivered messages.
 
