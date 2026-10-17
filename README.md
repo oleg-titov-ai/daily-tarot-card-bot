@@ -305,7 +305,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document deck-version migration so a content refresh does not repeat a subscriber's card for the same local date.
 
-- Document locale fallback behavior when a card translation is incomplete or unavailable at send time.
+- Document locale fallback behavior when a card translation is incomplete or unavailable at send time; use synthetic missing-title and missing-body cases to define a complete fallback language, preserve the selected card and delivery-day key, and avoid sending mixed-language fragments.
 
 - Document quiet-hour handling when a subscriber's delivery window crosses local midnight; use a synthetic overnight interval to define inclusive and exclusive boundaries, next eligible local time, and whether a deferred card is skipped or delivered once after quiet hours end.
 
