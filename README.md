@@ -303,7 +303,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document how an opt-out received during queued delivery cancels unsent daily-card messages.
 
-- Document deck-version migration so a content refresh does not repeat a subscriber's card for the same local date.
+- Document deck-version migration so a content refresh does not repeat a subscriber's card for the same local date; use synthetic delivered and pending records across a deck upgrade to define version assignment, preserve delivery-day deduplication, and handle removed card identifiers explicitly.
 
 - Document locale fallback behavior when a card translation is incomplete or unavailable at send time; use synthetic missing-title and missing-body cases to define a complete fallback language, preserve the selected card and delivery-day key, and avoid sending mixed-language fragments.
 
