@@ -295,7 +295,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document how scheduler-run identifiers correlate duplicate wake-ups in metrics without exposing subscriber information.
 
-- Document the safe content fallback used when a card record is missing optional metadata at delivery time.
+- Document the safe content fallback used when a card record is missing optional metadata at delivery time; use synthetic absent attribution or subtitle fields to define omission without fabricated values, while treating a missing card title or meaning as invalid required content rather than optional metadata.
 
 - Document scheduled-date validation around daylight-saving transitions so each subscriber receives at most one daily card; use synthetic skipped and repeated local times in a named timezone to define gap handling, repeated-hour selection, and a stable local-date delivery key.
 
