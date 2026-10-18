@@ -289,7 +289,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document how a language preference change is applied when today's card is generated but not yet delivered.
 
-- Document the generation-provider version recorded with a daily card so later retries remain auditable.
+- Document the generation-provider version recorded with a daily card so later retries remain auditable; use a synthetic draw to define provider and model-version fields, record unavailable versions explicitly, and reuse saved content on delivery retry without storing credentials or claiming exact regeneration.
 
 - Document how missed-delivery recovery respects a timezone change made after the original delivery window; use a synthetic missed job and an already-delivered local-date record to define skip or reschedule behavior in the new timezone without replaying a card already acknowledged.
 
