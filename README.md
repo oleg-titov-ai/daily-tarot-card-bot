@@ -287,7 +287,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document the content-template version recorded with each daily draw for consistent retry behavior.
 
-- Document how a language preference change is applied when today's card is generated but not yet delivered.
+- Document how a language preference change is applied when today's card is generated but not yet delivered; use a synthetic pending draw to define translation selection or fallback, preserve its card identifier and local-date key, and verify a language edit does not create a second draw.
 
 - Document the generation-provider version recorded with a daily card so later retries remain auditable; use a synthetic draw to define provider and model-version fields, record unavailable versions explicitly, and reuse saved content on delivery retry without storing credentials or claiming exact regeneration.
 
