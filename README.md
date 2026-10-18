@@ -291,7 +291,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document the generation-provider version recorded with a daily card so later retries remain auditable.
 
-- Document how missed-delivery recovery respects a timezone change made after the original delivery window.
+- Document how missed-delivery recovery respects a timezone change made after the original delivery window; use a synthetic missed job and an already-delivered local-date record to define skip or reschedule behavior in the new timezone without replaying a card already acknowledged.
 
 - Document how scheduler-run identifiers correlate duplicate wake-ups in metrics without exposing subscriber information; use two synthetic wake-ups for one scheduled job to distinguish run identifiers from the stable delivery key, recording aggregate duplicate counts without subscriber identifiers as metric labels.
 
