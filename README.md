@@ -293,7 +293,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document how missed-delivery recovery respects a timezone change made after the original delivery window.
 
-- Document how scheduler-run identifiers correlate duplicate wake-ups in metrics without exposing subscriber information.
+- Document how scheduler-run identifiers correlate duplicate wake-ups in metrics without exposing subscriber information; use two synthetic wake-ups for one scheduled job to distinguish run identifiers from the stable delivery key, recording aggregate duplicate counts without subscriber identifiers as metric labels.
 
 - Document the safe content fallback used when a card record is missing optional metadata at delivery time; use synthetic absent attribution or subtitle fields to define omission without fabricated values, while treating a missing card title or meaning as invalid required content rather than optional metadata.
 
