@@ -285,7 +285,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document how delivery metrics use stable attempt identifiers so retries do not inflate failure counts.
 
-- Document the content-template version recorded with each daily draw for consistent retry behavior.
+- Document the content-template version recorded with each daily draw for consistent retry behavior; use a synthetic queued draw followed by a template update to specify whether retries reuse saved rendered content or its pinned template version, and define an explicit unresolved outcome when neither is available instead of silently regenerating the message.
 
 - Document how a language preference change is applied when today's card is generated but not yet delivered; use a synthetic pending draw to define translation selection or fallback, preserve its card identifier and local-date key, and verify a language edit does not create a second draw.
 
