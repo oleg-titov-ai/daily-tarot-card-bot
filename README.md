@@ -169,6 +169,10 @@ Telegram bot that sends a random daily tarot card with an image, meaning and sho
 **Russian:**  
 Telegram-бот, который каждое утро отправляет случайную карту Таро с картинкой, значением и коротким советом дня.
 
+## Maintenance checklist
+
+These items describe planned checks rather than completed verification. Record the synthetic draw or delivery fixture, observed outcome, and tested commit when checking an item; mark checks not performed as untested.
+
 Maintenance note: verify every active demo card has both a readable caption and a usable image fallback.
 
 Maintenance note: confirm disabled subscribers are excluded immediately before each scheduled send.
