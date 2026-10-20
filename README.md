@@ -277,7 +277,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document the stable daily-draw identifier used to preserve one interpretation across generation and delivery retries.
 
-- Document how scheduler clock corrections are handled without skipping or duplicating a user's daily delivery.
+- Document how scheduler clock corrections are handled without skipping or duplicating a user's daily delivery; simulate forward and backward jumps around a synthetic local delivery window, preserve the stable daily-draw key, and record the expected deliver, defer, or skip decision with at most one acknowledged send.
 
 - Document retention and cleanup rules for daily-draw identifiers after their retry window has expired; use synthetic active, expired, and unresolved deliveries to define cleanup eligibility, preserving deduplication evidence until no permitted retry or reconciliation can resend the same draw.
 
