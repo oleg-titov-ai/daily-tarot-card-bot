@@ -271,7 +271,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document how a user's delivery preference change is applied when a daily message is already queued.
 
-- Document how delivery metrics exclude test accounts and manual preview messages from production totals.
+- Document delivery-metric scope using synthetic production-labelled, test, and manual-preview events; specify which enter success, failure, and attempt totals, and apply the same exclusions to rate denominators so previews cannot inflate reported delivery performance.
 
 - Document how queued daily messages are cancelled when a user opts out before delivery.
 
