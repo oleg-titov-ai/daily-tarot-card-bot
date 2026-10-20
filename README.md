@@ -281,7 +281,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document retention and cleanup rules for daily-draw identifiers after their retry window has expired; use synthetic active, expired, and unresolved deliveries to define cleanup eligibility, preserving deduplication evidence until no permitted retry or reconciliation can resend the same draw.
 
-- Document how an already generated daily card is handled when delivery crosses into the user's next local day.
+- Document delayed-card handling across local midnight with synthetic queued and already-delivered draws; define expiry or deferred delivery explicitly, preserve the original draw-date key, and specify interaction with the new day's schedule without relabelling yesterday's card as today's draw.
 
 - Document how delivery metrics use stable attempt identifiers so retries do not inflate failure counts.
 
