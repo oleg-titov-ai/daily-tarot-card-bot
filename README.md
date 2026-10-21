@@ -275,7 +275,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document scheduler health for zero eligible recipients using a synthetic empty selection and a mocked selection failure; distinguish a completed no-op run from a failed lookup, recording no delivery successes in either case and never treating an unavailable recipient query as an empty audience.
 
-- Document the stable daily-draw identifier used to preserve one interpretation across generation and delivery retries.
+- Document the stable daily-draw identifier used to preserve one interpretation across generation and delivery retries; define its synthetic subscriber alias, local draw date, and deck version components, creation point, immutability rules, and reuse across provider retries without exposing production identifiers.
 
 - Document how scheduler clock corrections are handled without skipping or duplicating a user's daily delivery; simulate forward and backward jumps around a synthetic local delivery window, preserve the stable daily-draw key, and record the expected deliver, defer, or skip decision with at most one acknowledged send.
 
