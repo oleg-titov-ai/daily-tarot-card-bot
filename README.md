@@ -261,7 +261,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document how blocked-user responses are recorded without repeatedly retrying permanent delivery failures.
 
-- Document the default delivery window and how missed sends are handled after scheduler downtime.
+- Document the default delivery window and how missed sends are handled after scheduler downtime; use synthetic restarts inside and beyond the local window to define deliver, defer, or skip decisions, preserving the stable daily-draw key and at most one acknowledged delivery per subscriber date.
 
 - Document how content-generation retries avoid sending different card interpretations for the same daily draw; use a synthetic provider timeout before and after a validated response to specify storage under the stable draw key, reuse of the first accepted interpretation, and suppression of alternate text after delivery is acknowledged.
 
