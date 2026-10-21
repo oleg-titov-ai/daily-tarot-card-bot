@@ -267,7 +267,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document the procedure for resuming scheduled sends after maintenance without duplicating already delivered cards.
 
-- Document how a user's delivery preference change is applied when a daily message is already queued.
+- Document how a user's delivery preference change is applied when a daily message is already queued; use synthetic time, language, and format changes before and after queueing to define which settings are revalidated at send time while preserving the original daily-draw identifier and one-delivery limit.
 
 - Document delivery-metric scope using synthetic production-labelled, test, and manual-preview events; specify which enter success, failure, and attempt totals, and apply the same exclusions to rate denominators so previews cannot inflate reported delivery performance.
 
