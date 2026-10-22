@@ -338,3 +338,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document how an on-demand daily-card request is reconciled with a scheduled delivery for the same subscriber and local date; race two synthetic requests to verify both resolve to the same selected card, create one delivery-day record, and never send a second card after either path succeeds.
 
 - Document how a queued daily-card delivery reacts when the subscriber changes language before send time; use synthetic pending and already-delivered cases to define final preference revalidation, preserve the selected card and local-date key, and prevent mixed-language content or duplicate delivery.
+
+- Document immutable card-revision identifiers for delivery audits when text or artwork changes without a deck-version bump; use synthetic pre- and post-edit content to specify revision hashing, preserve the delivered revision record, and avoid storing subscriber data in the identifier.
