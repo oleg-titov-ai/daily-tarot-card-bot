@@ -340,3 +340,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document how a queued daily-card delivery reacts when the subscriber changes language before send time; use synthetic pending and already-delivered cases to define final preference revalidation, preserve the selected card and local-date key, and prevent mixed-language content or duplicate delivery.
 
 - Document immutable card-revision identifiers for delivery audits when text or artwork changes without a deck-version bump; use synthetic pre- and post-edit content to specify revision hashing, preserve the delivered revision record, and avoid storing subscriber data in the identifier.
+
+- Document scheduler behavior when the host wall clock moves forward or backward during a delivery window; use synthetic clock jumps to preserve one stable subscriber-local date key, bound overdue processing, and prevent duplicate or prematurely skipped cards.
