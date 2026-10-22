@@ -283,7 +283,7 @@ Maintenance note: document content length and formatting validation performed be
 
 - Document delayed-card handling across local midnight with synthetic queued and already-delivered draws; define expiry or deferred delivery explicitly, preserve the original draw-date key, and specify interaction with the new day's schedule without relabelling yesterday's card as today's draw.
 
-- Document how delivery metrics use stable attempt identifiers so retries do not inflate failure counts.
+- Document how delivery metrics use stable attempt identifiers so retries do not inflate failure counts; replay synthetic timeout, retry, late acknowledgement, and permanent failure events under one delivery identity to define attempt, delivery, success, and terminal-failure counters plus their denominator rules.
 
 - Document the content-template version recorded with each daily draw for consistent retry behavior; use a synthetic queued draw followed by a template update to specify whether retries reuse saved rendered content or its pinned template version, and define an explicit unresolved outcome when neither is available instead of silently regenerating the message.
 
