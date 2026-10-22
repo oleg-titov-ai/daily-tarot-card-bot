@@ -334,3 +334,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document deterministic card-selection seeds for test environments without exposing or reusing production subscriber identifiers; record the test seed and deck version, then verify repeated runs select the same card from the unchanged demo deck.
 
 - Document delivery fallback when Telegram rejects scheduled media because the uploaded file exceeds current size limits; simulate the rejection with synthetic subscriber data and verify the text-only fallback preserves the original daily draw and records success only after acknowledgement.
+
+- Document how an on-demand daily-card request is reconciled with a scheduled delivery for the same subscriber and local date; race two synthetic requests to verify both resolve to the same selected card, create one delivery-day record, and never send a second card after either path succeeds.
