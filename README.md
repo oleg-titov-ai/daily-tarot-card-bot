@@ -344,3 +344,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document scheduler behavior when the host wall clock moves forward or backward during a delivery window; use synthetic clock jumps to preserve one stable subscriber-local date key, bound overdue processing, and prevent duplicate or prematurely skipped cards.
 
 - Document which Telegram chat types may create subscriptions and request daily cards; use synthetic private, group, supergroup, and channel updates to define supported behavior, prevent accidental group subscriptions, and avoid exposing subscriber preferences in shared chats.
+
+- Document handling of stale or replayed inline-button callbacks from earlier bot messages; use synthetic callback identifiers, message revisions, and subscriber states to specify safe acknowledgement, no duplicate draw or subscription change, and a current-action prompt where needed.
