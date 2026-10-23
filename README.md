@@ -348,3 +348,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document handling of stale or replayed inline-button callbacks from earlier bot messages; use synthetic callback identifiers, message revisions, and subscriber states to specify safe acknowledgement, no duplicate draw or subscription change, and a current-action prompt where needed.
 
 - Document operator-triggered resend behavior for a failed daily delivery; use synthetic current, expired, already-successful, and unsubscribed delivery records to require the original idempotency key, recheck consent, and prevent a manual action from creating a second draw.
+
+- Document delivery-state handling when a subscriber blocks the bot before a scheduled card and later unblocks it; use synthetic forbidden, restored, and still-unavailable sends to define subscription status, bounded retry, and whether the missed card expires without generating a second draw.
