@@ -350,3 +350,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document operator-triggered resend behavior for a failed daily delivery; use synthetic current, expired, already-successful, and unsubscribed delivery records to require the original idempotency key, recheck consent, and prevent a manual action from creating a second draw.
 
 - Document delivery-state handling when a subscriber blocks the bot before a scheduled card and later unblocks it; use synthetic forbidden, restored, and still-unavailable sends to define subscription status, bounded retry, and whether the missed card expires without generating a second draw.
+
+- Document behavior when deck filters leave no eligible card for a subscriber-local day; use synthetic empty, one-card, and restored-deck cases to return a neutral unavailable status, preserve the daily idempotency key, and avoid selecting an excluded card or rerolling repeatedly.
