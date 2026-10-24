@@ -354,3 +354,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document behavior when deck filters leave no eligible card for a subscriber-local day; use synthetic empty, one-card, and restored-deck cases to return a neutral unavailable status, preserve the daily idempotency key, and avoid selecting an excluded card or rerolling repeatedly.
 
 - Document card-image validation before delivery; use synthetic valid, corrupt, oversized, wrong-content-type, and dimension-mismatched assets to select the documented text fallback, preserve the original daily draw, and avoid repeatedly fetching an invalid image.
+
+- Document escaping and parse-mode validation for card titles, meanings, and attribution before Telegram delivery; use synthetic Markdown and HTML metacharacters, malformed entities, and plain text to prevent formatting failures, preserve the original draw, and fall back to readable unformatted content.
