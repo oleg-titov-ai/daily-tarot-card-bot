@@ -356,3 +356,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document card-image validation before delivery; use synthetic valid, corrupt, oversized, wrong-content-type, and dimension-mismatched assets to select the documented text fallback, preserve the original daily draw, and avoid repeatedly fetching an invalid image.
 
 - Document escaping and parse-mode validation for card titles, meanings, and attribution before Telegram delivery; use synthetic Markdown and HTML metacharacters, malformed entities, and plain text to prevent formatting failures, preserve the original draw, and fall back to readable unformatted content.
+
+- Document Telegram message-length validation after escaping and localization; use synthetic boundary, over-limit, multi-byte, and entity-heavy card text to split or select the documented concise fallback without cutting an entity, changing the draw, or sending duplicate fragments.
