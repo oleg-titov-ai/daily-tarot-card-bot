@@ -364,3 +364,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document handling of an invalid, removed, or unresolvable subscriber timezone; use synthetic valid, aliased, unknown, and temporarily unavailable zone data to pause scheduling with a neutral correction prompt, preserve prior delivery history, and avoid silently falling back to server time.
 
 - Document validation and fallback when a localized deck entry is missing required title, meaning, or attribution fields; use synthetic complete, partial, empty, and malformed translations to select the documented readable fallback, preserve the original card and delivery-day key, and avoid mixing languages or rerolling the draw.
+
+- Document recovery when a queued delivery references a deck or card revision that is no longer available; use synthetic present, archived, missing, and hash-mismatched revisions to preserve the original draw and delivery-day key, fail visibly without rerolling, and allow resend only from a verified immutable revision.
