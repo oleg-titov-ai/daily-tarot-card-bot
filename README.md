@@ -360,3 +360,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document Telegram message-length validation after escaping and localization; use synthetic boundary, over-limit, multi-byte, and entity-heavy card text to split or select the documented concise fallback without cutting an entity, changing the draw, or sending duplicate fragments.
 
 - Document delivery reconciliation when Telegram accepts a card but the client loses the response before persisting success; use synthetic confirmed, rejected, timeout, and unknown outcomes to retain one delivery key, avoid immediate blind resend, and expose an operator-reviewable uncertain status without drawing again.
+
+- Document handling of an invalid, removed, or unresolvable subscriber timezone; use synthetic valid, aliased, unknown, and temporarily unavailable zone data to pause scheduling with a neutral correction prompt, preserve prior delivery history, and avoid silently falling back to server time.
