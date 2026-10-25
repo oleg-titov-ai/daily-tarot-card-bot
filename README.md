@@ -366,3 +366,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document validation and fallback when a localized deck entry is missing required title, meaning, or attribution fields; use synthetic complete, partial, empty, and malformed translations to select the documented readable fallback, preserve the original card and delivery-day key, and avoid mixing languages or rerolling the draw.
 
 - Document recovery when a queued delivery references a deck or card revision that is no longer available; use synthetic present, archived, missing, and hash-mismatched revisions to preserve the original draw and delivery-day key, fail visibly without rerolling, and allow resend only from a verified immutable revision.
+
+- Document revalidation when a subscriber changes deck or card-filter preferences after a daily draw is queued but before delivery; use synthetic unchanged, narrowed, emptied, and restored preferences to preserve one delivery-day key, suppress an ineligible queued card without rerolling silently, and define the next eligible draw explicitly.
