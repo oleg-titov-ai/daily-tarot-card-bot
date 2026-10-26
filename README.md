@@ -374,3 +374,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document delivery-history reconciliation after a database restore; use synthetic current, stale, future-dated, duplicated, and partially restored records to preserve acknowledged delivery-day keys, quarantine ambiguous rows, avoid replaying cards, and resume scheduling only after the restored snapshot is validated.
 
 - Document subscriber data-erasure handling across preferences, queued deliveries, and delivery history; use synthetic pending, delivered, failed, and repeated requests to stop future sends, remove or anonymize fields according to the retention policy, preserve only non-identifying operational evidence, and never regenerate a deleted draw.
+
+- Document atomic activation of a new deck or content version across parallel scheduler workers; use synthetic old, staged, activated, rolled-back, and mixed-cache states to pin each daily draw to one verified version, prevent mixed title/artwork delivery, and keep already acknowledged cards unchanged.
