@@ -376,3 +376,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document subscriber data-erasure handling across preferences, queued deliveries, and delivery history; use synthetic pending, delivered, failed, and repeated requests to stop future sends, remove or anonymize fields according to the retention policy, preserve only non-identifying operational evidence, and never regenerate a deleted draw.
 
 - Document atomic activation of a new deck or content version across parallel scheduler workers; use synthetic old, staged, activated, rolled-back, and mixed-cache states to pin each daily draw to one verified version, prevent mixed title/artwork delivery, and keep already acknowledged cards unchanged.
+
+- Document immutable media references for card artwork served through a cache or CDN; use synthetic current, stale-cached, missing, hash-mismatched, and rolled-back assets to bind each queued draw to one verified artwork revision, fail visibly without rerolling, and keep acknowledged deliveries unchanged.
