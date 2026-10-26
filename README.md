@@ -370,3 +370,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document revalidation when a subscriber changes deck or card-filter preferences after a daily draw is queued but before delivery; use synthetic unchanged, narrowed, emptied, and restored preferences to preserve one delivery-day key, suppress an ineligible queued card without rerolling silently, and define the next eligible draw explicitly.
 
 - Document Telegram bot-token rotation while scheduled deliveries are queued; use synthetic current, overlap, retired, invalid, and unknown-outcome credentials to pause new sends during cutover, preserve delivery idempotency keys, resume only after a non-sensitive capability check, and never record token values in logs or fixtures.
+
+- Document delivery-history reconciliation after a database restore; use synthetic current, stale, future-dated, duplicated, and partially restored records to preserve acknowledged delivery-day keys, quarantine ambiguous rows, avoid replaying cards, and resume scheduling only after the restored snapshot is validated.
