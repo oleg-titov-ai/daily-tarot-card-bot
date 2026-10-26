@@ -378,3 +378,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document atomic activation of a new deck or content version across parallel scheduler workers; use synthetic old, staged, activated, rolled-back, and mixed-cache states to pin each daily draw to one verified version, prevent mixed title/artwork delivery, and keep already acknowledged cards unchanged.
 
 - Document immutable media references for card artwork served through a cache or CDN; use synthetic current, stale-cached, missing, hash-mismatched, and rolled-back assets to bind each queued draw to one verified artwork revision, fail visibly without rerolling, and keep acknowledged deliveries unchanged.
+
+- Document recovery when a stored Telegram media `file_id` is rejected or no longer reusable; use synthetic valid, expired, wrong-bot, missing, and transient-error cases to retry only from the same verified artwork revision, preserve the delivery-day key, avoid rerolling the card, and keep media bytes out of logs.
