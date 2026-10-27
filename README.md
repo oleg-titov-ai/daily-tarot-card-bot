@@ -388,3 +388,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document scheduler behavior when worker clocks differ from the authoritative database or queue clock; use synthetic aligned, fast, slow, corrected, and unavailable-time cases to derive one delivery-day boundary, fence premature or late claims, preserve idempotency keys, and avoid duplicate or skipped cards.
 
 - Document delivery formatting when card text exceeds Telegram photo-caption or message-length limits; use synthetic short, boundary, oversized, multilingual, and markup-heavy content to split deterministically, preserve one delivery-day key and artwork revision, avoid duplicate sends, and never truncate attribution silently.
+
+- Document idempotent handling of repeated subscribe and unsubscribe commands; use synthetic first, duplicate, delayed, reordered, and concurrent commands to converge on one explicit subscription state, cancel or retain queued deliveries according to the final confirmed choice, and avoid exposing prior card history in responses.
