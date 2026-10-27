@@ -384,3 +384,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document scheduler leadership leases with fencing across parallel workers; use synthetic current-leader, expired-lease, delayed-worker, split-brain, and handoff cases to ensure only the newest fenced worker can queue a daily card, preserve delivery-day idempotency, and prevent duplicate draws or sends.
 
 - Document subscription recovery after a user unblocks the Telegram bot; use synthetic still-blocked, unblocked-without-command, explicit-resubscribe, duplicate-resubscribe, and stale-queue cases to require fresh consent, avoid backfilling missed cards, preserve future delivery idempotency, and keep prior content private.
+
+- Document scheduler behavior when worker clocks differ from the authoritative database or queue clock; use synthetic aligned, fast, slow, corrected, and unavailable-time cases to derive one delivery-day boundary, fence premature or late claims, preserve idempotency keys, and avoid duplicate or skipped cards.
