@@ -386,3 +386,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document subscription recovery after a user unblocks the Telegram bot; use synthetic still-blocked, unblocked-without-command, explicit-resubscribe, duplicate-resubscribe, and stale-queue cases to require fresh consent, avoid backfilling missed cards, preserve future delivery idempotency, and keep prior content private.
 
 - Document scheduler behavior when worker clocks differ from the authoritative database or queue clock; use synthetic aligned, fast, slow, corrected, and unavailable-time cases to derive one delivery-day boundary, fence premature or late claims, preserve idempotency keys, and avoid duplicate or skipped cards.
+
+- Document delivery formatting when card text exceeds Telegram photo-caption or message-length limits; use synthetic short, boundary, oversized, multilingual, and markup-heavy content to split deterministically, preserve one delivery-day key and artwork revision, avoid duplicate sends, and never truncate attribution silently.
