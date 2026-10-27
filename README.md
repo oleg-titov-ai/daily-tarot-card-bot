@@ -380,3 +380,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document immutable media references for card artwork served through a cache or CDN; use synthetic current, stale-cached, missing, hash-mismatched, and rolled-back assets to bind each queued draw to one verified artwork revision, fail visibly without rerolling, and keep acknowledged deliveries unchanged.
 
 - Document recovery when a stored Telegram media `file_id` is rejected or no longer reusable; use synthetic valid, expired, wrong-bot, missing, and transient-error cases to retry only from the same verified artwork revision, preserve the delivery-day key, avoid rerolling the card, and keep media bytes out of logs.
+
+- Document scheduler leadership leases with fencing across parallel workers; use synthetic current-leader, expired-lease, delayed-worker, split-brain, and handoff cases to ensure only the newest fenced worker can queue a daily card, preserve delivery-day idempotency, and prevent duplicate draws or sends.
