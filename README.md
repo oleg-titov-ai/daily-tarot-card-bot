@@ -390,3 +390,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document delivery formatting when card text exceeds Telegram photo-caption or message-length limits; use synthetic short, boundary, oversized, multilingual, and markup-heavy content to split deterministically, preserve one delivery-day key and artwork revision, avoid duplicate sends, and never truncate attribution silently.
 
 - Document idempotent handling of repeated subscribe and unsubscribe commands; use synthetic first, duplicate, delayed, reordered, and concurrent commands to converge on one explicit subscription state, cancel or retain queued deliveries according to the final confirmed choice, and avoid exposing prior card history in responses.
+
+- Document queue backpressure when a provider outage creates a large delivery backlog; use synthetic short, prolonged, recovered, expired-day, and partial-drain cases to bound concurrency, prioritize still-valid daily cards deterministically, suppress stale catch-up sends, and preserve one delivery-day idempotency key per subscriber.
