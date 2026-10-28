@@ -394,3 +394,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document queue backpressure when a provider outage creates a large delivery backlog; use synthetic short, prolonged, recovered, expired-day, and partial-drain cases to bound concurrency, prioritize still-valid daily cards deterministically, suppress stale catch-up sends, and preserve one delivery-day idempotency key per subscriber.
 
 - Document delivery-time changes while a daily-card job is already queued; use synthetic earlier, later, timezone-shifted, concurrent-change, stale-worker, and send-in-progress cases to version the schedule, cancel or supersede only the prior pending job, preserve one delivery-day idempotency key, and avoid duplicate or catch-up sends.
+
+- Document Telegram flood-control handling for daily-card delivery; use synthetic per-chat, global, missing-`retry_after`, repeated-429, recovered, and expired-day cases to respect authoritative backoff, bound retries with jitter, preserve one delivery-day idempotency key, and suppress stale catch-up sends.
