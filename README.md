@@ -396,3 +396,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document delivery-time changes while a daily-card job is already queued; use synthetic earlier, later, timezone-shifted, concurrent-change, stale-worker, and send-in-progress cases to version the schedule, cancel or supersede only the prior pending job, preserve one delivery-day idempotency key, and avoid duplicate or catch-up sends.
 
 - Document Telegram flood-control handling for daily-card delivery; use synthetic per-chat, global, missing-`retry_after`, repeated-429, recovered, and expired-day cases to respect authoritative backoff, bound retries with jitter, preserve one delivery-day idempotency key, and suppress stale catch-up sends.
+
+- Document versioning of card interpretations and translations when editorial content changes; use synthetic unchanged, corrected, locale-specific, partially published, cached, and queued-delivery cases to bind each draw to one reviewed content revision, avoid mixed-language messages, and preserve historical delivery meaning without exposing subscriber data.
