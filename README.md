@@ -392,3 +392,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document idempotent handling of repeated subscribe and unsubscribe commands; use synthetic first, duplicate, delayed, reordered, and concurrent commands to converge on one explicit subscription state, cancel or retain queued deliveries according to the final confirmed choice, and avoid exposing prior card history in responses.
 
 - Document queue backpressure when a provider outage creates a large delivery backlog; use synthetic short, prolonged, recovered, expired-day, and partial-drain cases to bound concurrency, prioritize still-valid daily cards deterministically, suppress stale catch-up sends, and preserve one delivery-day idempotency key per subscriber.
+
+- Document delivery-time changes while a daily-card job is already queued; use synthetic earlier, later, timezone-shifted, concurrent-change, stale-worker, and send-in-progress cases to version the schedule, cancel or supersede only the prior pending job, preserve one delivery-day idempotency key, and avoid duplicate or catch-up sends.
