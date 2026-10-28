@@ -398,3 +398,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document Telegram flood-control handling for daily-card delivery; use synthetic per-chat, global, missing-`retry_after`, repeated-429, recovered, and expired-day cases to respect authoritative backoff, bound retries with jitter, preserve one delivery-day idempotency key, and suppress stale catch-up sends.
 
 - Document versioning of card interpretations and translations when editorial content changes; use synthetic unchanged, corrected, locale-specific, partially published, cached, and queued-delivery cases to bind each draw to one reviewed content revision, avoid mixed-language messages, and preserve historical delivery meaning without exposing subscriber data.
+
+- Document synchronization of Telegram bot-command menus across private-chat scope and supported locales; use synthetic current, stale, missing-translation, removed-command, partial-update, and rollback cases to publish one reviewed command set, preserve working text commands during failure, and keep subscriber identifiers out of deployment diagnostics.
