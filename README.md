@@ -404,3 +404,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document verifiable card-selection randomness without storing subscriber-linked draw inputs; use synthetic fixed-test, production-entropy, repeated-seed, concurrent-draw, unavailable-source, and statistical-smoke fixtures to keep deterministic tests separate from production, prevent accidental seed reuse, and preserve one unbiased draw per delivery-day key.
 
 - Document accessible text alternatives for card artwork and visual symbolism; use synthetic concise, multilingual, missing, oversized, revised, and image-send-fallback cases to provide one reviewed non-divinatory description alongside the same card revision, preserve message-length limits, and avoid including subscriber or draw metadata in accessibility text.
+
+- Document whether daily card draws permit immediate repeats or apply a reviewed repeat window; use synthetic single-card, full-deck, boundary-window, concurrent-draw, history-missing, and policy-change cases to preserve unbiased selection within the documented rule, avoid unbounded subscriber history, and bind the decision to one delivery-day key.
