@@ -406,3 +406,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document accessible text alternatives for card artwork and visual symbolism; use synthetic concise, multilingual, missing, oversized, revised, and image-send-fallback cases to provide one reviewed non-divinatory description alongside the same card revision, preserve message-length limits, and avoid including subscriber or draw metadata in accessibility text.
 
 - Document whether daily card draws permit immediate repeats or apply a reviewed repeat window; use synthetic single-card, full-deck, boundary-window, concurrent-draw, history-missing, and policy-change cases to preserve unbiased selection within the documented rule, avoid unbounded subscriber history, and bind the decision to one delivery-day key.
+
+- Document rotation of the Telegram webhook secret token with an explicit overlap and cutoff policy; use synthetic current, previous-within-overlap, retired, missing, malformed, duplicate-delivery, and rollback cases to authenticate each update once, reject silent fallback, preserve delivery idempotency, and keep secret values and subscriber identifiers out of logs.
