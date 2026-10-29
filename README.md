@@ -400,3 +400,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document versioning of card interpretations and translations when editorial content changes; use synthetic unchanged, corrected, locale-specific, partially published, cached, and queued-delivery cases to bind each draw to one reviewed content revision, avoid mixed-language messages, and preserve historical delivery meaning without exposing subscriber data.
 
 - Document synchronization of Telegram bot-command menus across private-chat scope and supported locales; use synthetic current, stale, missing-translation, removed-command, partial-update, and rollback cases to publish one reviewed command set, preserve working text commands during failure, and keep subscriber identifiers out of deployment diagnostics.
+
+- Document verifiable card-selection randomness without storing subscriber-linked draw inputs; use synthetic fixed-test, production-entropy, repeated-seed, concurrent-draw, unavailable-source, and statistical-smoke fixtures to keep deterministic tests separate from production, prevent accidental seed reuse, and preserve one unbiased draw per delivery-day key.
