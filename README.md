@@ -402,3 +402,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document synchronization of Telegram bot-command menus across private-chat scope and supported locales; use synthetic current, stale, missing-translation, removed-command, partial-update, and rollback cases to publish one reviewed command set, preserve working text commands during failure, and keep subscriber identifiers out of deployment diagnostics.
 
 - Document verifiable card-selection randomness without storing subscriber-linked draw inputs; use synthetic fixed-test, production-entropy, repeated-seed, concurrent-draw, unavailable-source, and statistical-smoke fixtures to keep deterministic tests separate from production, prevent accidental seed reuse, and preserve one unbiased draw per delivery-day key.
+
+- Document accessible text alternatives for card artwork and visual symbolism; use synthetic concise, multilingual, missing, oversized, revised, and image-send-fallback cases to provide one reviewed non-divinatory description alongside the same card revision, preserve message-length limits, and avoid including subscriber or draw metadata in accessibility text.
