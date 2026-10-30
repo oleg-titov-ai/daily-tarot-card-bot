@@ -414,3 +414,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document provenance and usage-rights review for card artwork and other delivery assets; use synthetic owned, licensed, public-domain, attribution-required, expired-license, replaced, and provenance-unknown records to publish only reviewed assets, bind attribution to the asset revision, preserve a text-only fallback, and avoid embedding subscriber or source-account data.
 
 - Document Telegram photo-caption and message-length limits for localized card deliveries; use synthetic exact-boundary, oversized-translation, long-attribution, escaped-markup, Unicode, and text-fallback cases to apply one deterministic reviewed truncation or split policy, preserve the same card revision and delivery-day key, and avoid duplicate sends.
+
+- Document cache invalidation for revised or replaced remote card images; use synthetic unchanged, same-URL-new-content, versioned-URL, missing, corrupt, oversized, and stale-CDN fixtures to validate the reviewed asset revision before send, fall back to the matching text content without redrawing, and preserve one delivery-day idempotency key.
