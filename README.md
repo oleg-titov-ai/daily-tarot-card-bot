@@ -412,3 +412,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document permanent Telegram delivery failures such as blocked bot, deactivated account, or missing chat; use synthetic success, transient-error, blocked, chat-not-found, restored, and duplicate-result cases to stop future sends only after an authoritative permanent response, preserve delivery-day idempotency, and keep chat identifiers out of diagnostics.
 
 - Document provenance and usage-rights review for card artwork and other delivery assets; use synthetic owned, licensed, public-domain, attribution-required, expired-license, replaced, and provenance-unknown records to publish only reviewed assets, bind attribution to the asset revision, preserve a text-only fallback, and avoid embedding subscriber or source-account data.
+
+- Document Telegram photo-caption and message-length limits for localized card deliveries; use synthetic exact-boundary, oversized-translation, long-attribution, escaped-markup, Unicode, and text-fallback cases to apply one deterministic reviewed truncation or split policy, preserve the same card revision and delivery-day key, and avoid duplicate sends.
