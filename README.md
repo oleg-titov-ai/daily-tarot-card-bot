@@ -416,3 +416,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document Telegram photo-caption and message-length limits for localized card deliveries; use synthetic exact-boundary, oversized-translation, long-attribution, escaped-markup, Unicode, and text-fallback cases to apply one deterministic reviewed truncation or split policy, preserve the same card revision and delivery-day key, and avoid duplicate sends.
 
 - Document cache invalidation for revised or replaced remote card images; use synthetic unchanged, same-URL-new-content, versioned-URL, missing, corrupt, oversized, and stale-CDN fixtures to validate the reviewed asset revision before send, fall back to the matching text content without redrawing, and preserve one delivery-day idempotency key.
+
+- Document temporary subscription pause and resume behavior without deleting delivery history; use synthetic immediate-pause, scheduled-pause, already-queued, expired-pause, manual-resume, timezone-change, and concurrent-command cases to suppress future sends atomically, preserve delivery-day idempotency, avoid catch-up cards, and keep subscriber identifiers out of diagnostics.
