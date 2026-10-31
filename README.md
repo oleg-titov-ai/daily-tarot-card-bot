@@ -418,3 +418,5 @@ Maintenance note: document content length and formatting validation performed be
 - Document cache invalidation for revised or replaced remote card images; use synthetic unchanged, same-URL-new-content, versioned-URL, missing, corrupt, oversized, and stale-CDN fixtures to validate the reviewed asset revision before send, fall back to the matching text content without redrawing, and preserve one delivery-day idempotency key.
 
 - Document temporary subscription pause and resume behavior without deleting delivery history; use synthetic immediate-pause, scheduled-pause, already-queued, expired-pause, manual-resume, timezone-change, and concurrent-command cases to suppress future sends atomically, preserve delivery-day idempotency, avoid catch-up cards, and keep subscriber identifiers out of diagnostics.
+
+- Document schedule re-evaluation when the timezone database changes future UTC offsets; use synthetic unchanged-zone, rule-change, removed-alias, queued-delivery, restart, and subscriber-timezone-update cases to retain the intended local delivery window, supersede only affected future jobs, preserve one delivery-day key, and avoid duplicate or catch-up cards.
